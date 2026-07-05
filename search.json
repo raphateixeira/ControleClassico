@@ -1,9 +1,891 @@
 [
   {
+    "objectID": "Avaliacoes/Avaliacao01Exemplo.html",
+    "href": "Avaliacoes/Avaliacao01Exemplo.html",
+    "title": "Avaliação 1 — Título",
+    "section": "",
+    "text": "Duração: 00 minutos.\nConsulta: permitida/não permitida a…\nEntrega: formato e prazo."
+  },
+  {
+    "objectID": "Avaliacoes/Avaliacao01Exemplo.html#instruções",
+    "href": "Avaliacoes/Avaliacao01Exemplo.html#instruções",
+    "title": "Avaliação 1 — Título",
+    "section": "",
+    "text": "Duração: 00 minutos.\nConsulta: permitida/não permitida a…\nEntrega: formato e prazo."
+  },
+  {
+    "objectID": "Avaliacoes/Avaliacao01Exemplo.html#questões",
+    "href": "Avaliacoes/Avaliacao01Exemplo.html#questões",
+    "title": "Avaliação 1 — Título",
+    "section": "Questões",
+    "text": "Questões\n\n(peso 0,0) Enunciado da primeira questão.\n(peso 0,0) Enunciado da segunda questão.\n(peso 0,0) Enunciado da terceira questão, com aplicação prática."
+  },
+  {
+    "objectID": "Avaliacoes/Avaliacao01Exemplo.html#critérios-de-avaliação",
+    "href": "Avaliacoes/Avaliacao01Exemplo.html#critérios-de-avaliação",
+    "title": "Avaliação 1 — Título",
+    "section": "Critérios de avaliação",
+    "text": "Critérios de avaliação\n\n\n\nQuestão\nPeso\nCritério\n\n\n\n\n1\n0,0\ndescreva o que será avaliado\n\n\n2\n0,0\ndescreva o que será avaliado\n\n\n3\n0,0\ndescreva o que será avaliado"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#resposta-em-frequência-conceito",
+    "href": "Notas/Aula08RespostaFrequencia.html#resposta-em-frequência-conceito",
+    "title": "Resposta em Frequência",
+    "section": "Resposta em Frequência — Conceito",
+    "text": "Resposta em Frequência — Conceito\nPara um sistema LIT estável com função de transferência \\(G(s)\\), a resposta em regime permanente a uma entrada senoidal \\(u(t)=A\\sin(\\omega t)\\) é também senoidal, de mesma frequência, com amplitude e fase alteradas:\n\\[y_{ss}(t) = A\\,|G(j\\omega)|\\,\\sin\\!\\big(\\omega t + \\angle G(j\\omega)\\big)\\]\n\n\n\n\n\n\nIdeia central\n\n\nA resposta em frequência \\(G(j\\omega)\\) é obtida substituindo \\(s=j\\omega\\) na função de transferência. Ela descreve completamente como o sistema amplifica/atenua e desloca em fase cada frequência \\(\\omega\\).\n\n\n\n\n\\(|G(j\\omega)|\\) — magnitude (ganho) em função de \\(\\omega\\)\n\\(\\angle G(j\\omega)\\) — fase em função de \\(\\omega\\)"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#diagrama-de-bode",
+    "href": "Notas/Aula08RespostaFrequencia.html#diagrama-de-bode",
+    "title": "Resposta em Frequência",
+    "section": "Diagrama de Bode",
+    "text": "Diagrama de Bode\nO diagrama de Bode representa \\(G(j\\omega)\\) em dois gráficos com eixo de frequência logarítmico:\n\nMagnitude: \\(20\\log_{10}|G(j\\omega)|\\) em decibéis (dB) vs. \\(\\log_{10}\\omega\\)\nFase: \\(\\angle G(j\\omega)\\) em graus vs. \\(\\log_{10}\\omega\\)\n\n\n\n\n\n\n\nPor que log-log/log-linear?\n\n\nFatores de \\(G(j\\omega)\\) em produto (polos, zeros, ganho) tornam-se somas em dB e em fase — cada fator contribui uma assíntota simples que se soma graficamente às demais."
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#assíntotas-de-bode-fatores-básicos",
+    "href": "Notas/Aula08RespostaFrequencia.html#assíntotas-de-bode-fatores-básicos",
+    "title": "Resposta em Frequência",
+    "section": "Assíntotas de Bode — Fatores Básicos",
+    "text": "Assíntotas de Bode — Fatores Básicos\n\n\n\n\n\n\n\n\nFator\nMagnitude (assíntota)\nFase\n\n\n\n\nGanho \\(K\\)\n\\(20\\log_{10}K\\) (constante)\n\\(0°\\) (ou \\(180°\\) se \\(K&lt;0\\))\n\n\nPolo na origem \\(1/(j\\omega)\\)\nreta de \\(-20\\) dB/década\nconstante em \\(-90°\\)\n\n\nZero na origem \\((j\\omega)\\)\nreta de \\(+20\\) dB/década\nconstante em \\(+90°\\)\n\n\nPolo real \\(1/(1+j\\omega/p)\\)\n\\(0\\) dB/década até \\(\\omega=p\\); \\(-20\\) dB/década após\n\\(0°\\to-90°\\to-180°\\) (centrado em \\(\\omega=p\\))\n\n\nZero real \\((1+j\\omega/z)\\)\n\\(0\\) dB/década até \\(\\omega=z\\); \\(+20\\) dB/década após\n\\(0°\\to+90°\\to+180°\\) (centrado em \\(\\omega=z\\))\n\n\n\n\n\n\n\n\n\nNote\n\n\nA frequência \\(\\omega=p\\) (ou \\(z\\)) é a frequência de canto (corner frequency) — no diagrama assintótico, o erro máximo em relação à curva real é de \\(\\approx3\\) dB nesse ponto."
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#construindo-o-diagrama-assintótico",
+    "href": "Notas/Aula08RespostaFrequencia.html#construindo-o-diagrama-assintótico",
+    "title": "Resposta em Frequência",
+    "section": "Construindo o Diagrama Assintótico",
+    "text": "Construindo o Diagrama Assintótico\nProcedimento:\n\nEscreva \\(G(j\\omega)\\) como produto de fatores básicos (ganho, polos/zeros na origem, polos/zeros reais, pares complexos)\nIdentifique as frequências de canto de cada fator (ordene-as)\nComece a assíntota de magnitude com a inclinação do(s) fator(es) de baixa frequência (ganho + polos/zeros na origem)\nA cada frequência de canto, some a inclinação do fator correspondente (\\(-20\\) dB/década por polo, \\(+20\\) dB/década por zero)\nPara a fase, some as contribuições assintóticas (ou exatas) de cada fator"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#exemplo-diagrama-de-bode",
+    "href": "Notas/Aula08RespostaFrequencia.html#exemplo-diagrama-de-bode",
+    "title": "Resposta em Frequência",
+    "section": "Exemplo — Diagrama de Bode",
+    "text": "Exemplo — Diagrama de Bode\n\nDiagrama de Bode de \\(G(s)=10/[s(s+1)(s+5)]\\), com margens de ganho e fase\nPolo na origem: \\(-20\\) dB/dec desde baixas frequências, fase partindo de \\(-90°\\)\nFrequências de canto em \\(\\omega=1\\) e \\(\\omega=5\\) rad/s (polos reais): inclinação cai para \\(-40\\) e depois \\(-60\\) dB/dec"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#margens-de-estabilidade",
+    "href": "Notas/Aula08RespostaFrequencia.html#margens-de-estabilidade",
+    "title": "Resposta em Frequência",
+    "section": "Margens de Estabilidade",
+    "text": "Margens de Estabilidade\nPara sistemas de fase mínima (sem polos/zeros no semiplano direito), a estabilidade da malha fechada pode ser avaliada diretamente no Bode de malha aberta \\(G(j\\omega)H(j\\omega)\\):\n\n\n\n\n\n\nMargem de Ganho (MG)\n\n\n\\[\\text{MG (dB)} = -20\\log_{10}\\big|G(j\\omega_{gc})H(j\\omega_{gc})\\big|\\] onde \\(\\omega_{gc}\\) é a frequência de cruzamento de fase (\\(\\angle G H = -180°\\)). Quanto o ganho pode aumentar antes de instabilizar.\n\n\n\n\n\n\n\n\n\nMargem de Fase (MF)\n\n\n\\[\\text{MF} = 180° + \\angle G(j\\omega_{pc})H(j\\omega_{pc})\\] onde \\(\\omega_{pc}\\) é a frequência de cruzamento de ganho (\\(|GH|=1=0\\) dB). Quanto de atraso de fase adicional o sistema tolera antes de instabilizar."
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#interpretando-as-margens-no-exemplo",
+    "href": "Notas/Aula08RespostaFrequencia.html#interpretando-as-margens-no-exemplo",
+    "title": "Resposta em Frequência",
+    "section": "Interpretando as Margens no Exemplo",
+    "text": "Interpretando as Margens no Exemplo\nNo diagrama de Bode do slide anterior, \\(G(s) = \\dfrac{10}{s(s+1)(s+5)}\\):\n\n\\(\\omega_{pc} \\approx 1{,}23\\) rad/s (onde \\(|G|=0\\) dB) \\(\\implies\\) MF \\(\\approx 25°\\)\n\\(\\omega_{gc} \\approx 2{,}24\\) rad/s (onde \\(\\angle G=-180°\\)) \\(\\implies\\) MG \\(\\approx 9{,}5\\) dB\n\n\n\n\n\n\n\nRegras práticas de projeto\n\n\nMargens positivas \\(\\implies\\) malha fechada estável. Valores usuais de projeto: MF entre \\(30°\\) e \\(60°\\), MG maior que \\(6\\) dB — margens pequenas (como MF \\(\\approx25°\\) acima) indicam sistema estável mas com pouca robustez e resposta transitória oscilatória."
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#relação-entre-margem-de-fase-e-amortecimento",
+    "href": "Notas/Aula08RespostaFrequencia.html#relação-entre-margem-de-fase-e-amortecimento",
+    "title": "Resposta em Frequência",
+    "section": "Relação entre Margem de Fase e Amortecimento",
+    "text": "Relação entre Margem de Fase e Amortecimento\nPara um sistema de malha aberta tipo dominante de 2ª ordem, existe a aproximação clássica:\n\\[\\zeta \\approx \\frac{\\text{MF}}{100}, \\qquad \\text{válida para } \\text{MF} \\lesssim 60°\\]\n\n\n\nMF\n\\(\\zeta\\) aprox.\n\\(M_p\\) aprox.\n\n\n\n\n\\(20°\\)\n\\(0{,}2\\)\n\\(53\\%\\)\n\n\n\\(40°\\)\n\\(0{,}4\\)\n\\(25\\%\\)\n\n\n\\(60°\\)\n\\(0{,}6\\)\n\\(9\\%\\)\n\n\n\\(70°\\)\n\\(0{,}7\\)\n\\(5\\%\\)\n\n\n\n\n\n\n\n\n\nNote\n\n\nEssa relação permite traduzir uma especificação de sobressinal (domínio do tempo, Aula 4) em uma especificação de margem de fase (domínio da frequência) — ponte fundamental para o projeto de controladores por resposta em frequência."
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#banda-passante-e-velocidade-de-resposta",
+    "href": "Notas/Aula08RespostaFrequencia.html#banda-passante-e-velocidade-de-resposta",
+    "title": "Resposta em Frequência",
+    "section": "Banda Passante e Velocidade de Resposta",
+    "text": "Banda Passante e Velocidade de Resposta\nA banda passante \\(\\omega_{BW}\\) é a frequência em que \\(|T(j\\omega)|\\) (malha fechada) cai \\(3\\) dB abaixo do valor em \\(\\omega=0\\).\n\n\n\n\n\n\nRelação aproximada (2ª ordem)\n\n\n\\[\\omega_{BW} \\approx \\omega_n\\sqrt{(1-2\\zeta^2)+\\sqrt{4\\zeta^4-4\\zeta^2+2}}\\] Para \\(\\zeta\\) típico (\\(0{,}4\\)–\\(0{,}8\\)): \\(\\omega_{BW} \\approx (1\\text{ a }1{,}5)\\,\\omega_n\\).\n\n\n\n\nQuanto maior a banda passante, mais rápida a resposta transitória (menor \\(t_r\\), menor \\(t_s\\)) — mas também maior sensibilidade a ruído de medição em alta frequência"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#critério-de-nyquist-visão-geral",
+    "href": "Notas/Aula08RespostaFrequencia.html#critério-de-nyquist-visão-geral",
+    "title": "Resposta em Frequência",
+    "section": "Critério de Nyquist (Visão Geral)",
+    "text": "Critério de Nyquist (Visão Geral)\nO critério de Bode (margens) pressupõe sistema de fase mínima. Para o caso geral (incluindo polos de malha aberta no semiplano direito), usa-se o critério de Nyquist:\n\n\n\n\n\n\nCritério de Nyquist\n\n\n\\[Z = N + P\\] onde \\(P\\) é o número de polos de malha aberta no SPD, \\(N\\) é o número de envolvimentos horários do ponto \\(-1\\) pelo diagrama de Nyquist de \\(G(j\\omega)H(j\\omega)\\), e \\(Z\\) é o número de polos de malha fechada no SPD. Estabilidade \\(\\iff Z=0\\).\n\n\n\n\n\n\n\n\n\nTip\n\n\nO diagrama de Nyquist é o gráfico de \\(G(j\\omega)H(j\\omega)\\) no plano complexo (parte real vs. imaginária), percorrendo \\(\\omega\\) de \\(-\\infty\\) a \\(+\\infty\\). As margens de ganho e fase têm interpretação geométrica direta como distâncias ao ponto \\(-1\\)."
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#resumo-domínio-do-tempo-vs.-frequência",
+    "href": "Notas/Aula08RespostaFrequencia.html#resumo-domínio-do-tempo-vs.-frequência",
+    "title": "Resposta em Frequência",
+    "section": "Resumo: Domínio do Tempo vs. Frequência",
+    "text": "Resumo: Domínio do Tempo vs. Frequência\n\n\n\n\n\n\n\nDomínio do Tempo\nDomínio da Frequência\n\n\n\n\nPolos dominantes (\\(\\zeta,\\omega_n\\))\nMargem de fase, banda passante\n\n\nSobressinal \\(M_p\\)\nMargem de fase (aprox. \\(\\zeta\\approx\\text{MF}/100\\))\n\n\nTempo de acomodação \\(t_s\\)\nBanda passante (inversamente relacionada)\n\n\nErro de regime permanente\nGanho em baixa frequência (\\(K_p\\), \\(K_v\\), \\(K_a\\))\n\n\nRouth-Hurwitz\nCritério de Nyquist"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#exercícios",
+    "href": "Notas/Aula08RespostaFrequencia.html#exercícios",
+    "title": "Resposta em Frequência",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nEsboce o diagrama de Bode assintótico de \\(G(s) = \\dfrac{100}{(s+2)(s+20)}\\): identifique as frequências de canto e as inclinações em cada faixa.\nPara \\(G(s) = \\dfrac{K}{s(s+4)}\\), determine, em função de \\(K\\), a frequência de cruzamento de ganho \\(\\omega_{gc}\\) e a margem de fase correspondente.\nUm sistema tem margem de fase medida de \\(45°\\). Estime \\(\\zeta\\) e o sobressinal \\(M_p\\) esperado em malha fechada.\nExplique, com base no critério de Nyquist, por que um sistema de fase mínima estável em malha aberta pode se tornar instável em malha fechada ao aumentar o ganho \\(K\\).\nCompare as margens de ganho e fase do Exemplo desta aula (\\(G(s)=10/[s(s+1)(s+5)]\\)) com as do Exemplo 1 do LGR (Aula 7, mesma planta com \\(K=48\\) no limite de estabilidade) — o que ocorre com a margem de fase quando \\(K\\to K_{crít}\\)?"
+  },
+  {
+    "objectID": "Notas/Aula08RespostaFrequencia.html#referências",
+    "href": "Notas/Aula08RespostaFrequencia.html#referências",
+    "title": "Resposta em Frequência",
+    "section": "Referências",
+    "text": "Referências"
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#erro-de-regime-permanente",
+    "href": "Notas/Aula06ErroRegimePermanente.html#erro-de-regime-permanente",
+    "title": "Erro de Regime Permanente",
+    "section": "Erro de Regime Permanente",
+    "text": "Erro de Regime Permanente\nPara o sistema em malha fechada com realimentação unitária negativa, o erro atuante é \\(e(t) = r(t) - y(t)\\). O erro de regime permanente é:\n\\[e_{ss} = \\lim_{t\\to\\infty} e(t) \\overset{\\text{TVF}}{=} \\lim_{s\\to 0} s\\,E(s)\\]\nonde o Teorema do Valor Final (TVF) só se aplica se \\(sE(s)\\) tiver todos os polos no semiplano esquerdo (sistema em malha fechada estável).\nPara a malha com direto \\(G(s)\\) e realimentação unitária:\n\\[E(s) = R(s) - Y(s) = \\frac{R(s)}{1+G(s)}\\qquad\\implies\\qquad e_{ss} = \\lim_{s\\to0}\\frac{s\\,R(s)}{1+G(s)}\\]"
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#tipo-de-sistema",
+    "href": "Notas/Aula06ErroRegimePermanente.html#tipo-de-sistema",
+    "title": "Erro de Regime Permanente",
+    "section": "Tipo de Sistema",
+    "text": "Tipo de Sistema\n\n\n\n\n\n\nDefinição\n\n\nO tipo de um sistema é o número \\(N\\) de polos de \\(G(s)\\) (a função de transferência de malha aberta) na origem (\\(s=0\\)), isto é, o número de integradores puros em cascata:\n\\[G(s) = \\frac{K\\prod_i(s+z_i)}{s^N\\prod_j(s+p_j)}, \\qquad p_j \\neq 0\\]\n\n\n\n\nTipo 0: nenhum integrador — erro finito para degrau, infinito para rampa\nTipo 1: um integrador — erro nulo para degrau, finito para rampa\nTipo 2: dois integradores — erro nulo para degrau e rampa, finito para parábola\n\n\n\n\n\n\n\nTip\n\n\nO tipo depende só de \\(G(s)H(s)\\) (malha aberta), não da malha fechada — mas determina o comportamento em regime permanente da malha fechada."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#constantes-de-erro-estático",
+    "href": "Notas/Aula06ErroRegimePermanente.html#constantes-de-erro-estático",
+    "title": "Erro de Regime Permanente",
+    "section": "Constantes de Erro Estático",
+    "text": "Constantes de Erro Estático\nDefinidas a partir de \\(G(s)\\) de malha aberta (realimentação unitária):\n\n\n\n\n\n\n\n\nConstante\nDefinição\nEntrada associada\n\n\n\n\nPosição \\(K_p\\)\n\\(\\displaystyle\\lim_{s\\to0} G(s)\\)\ndegrau \\(r(t)=A\\,u(t)\\)\n\n\nVelocidade \\(K_v\\)\n\\(\\displaystyle\\lim_{s\\to0} sG(s)\\)\nrampa \\(r(t)=A\\,t\\)\n\n\nAceleração \\(K_a\\)\n\\(\\displaystyle\\lim_{s\\to0} s^2G(s)\\)\nparábola \\(r(t)=A\\,t^2/2\\)\n\n\n\nErros de regime permanente correspondentes:\n\\[e_{ss,\\text{degrau}} = \\frac{A}{1+K_p}\\qquad e_{ss,\\text{rampa}} = \\frac{A}{K_v}\\qquad e_{ss,\\text{parábola}} = \\frac{A}{K_a}\\]"
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#tabela-erro-tipo-entrada",
+    "href": "Notas/Aula06ErroRegimePermanente.html#tabela-erro-tipo-entrada",
+    "title": "Erro de Regime Permanente",
+    "section": "Tabela Erro × Tipo × Entrada",
+    "text": "Tabela Erro × Tipo × Entrada\nPara entradas de amplitude unitária (\\(A=1\\)):\n\n\n\nTipo\nDegrau (\\(1/s\\))\nRampa (\\(1/s^2\\))\nParábola (\\(1/s^3\\))\n\n\n\n\n0\n\\(\\dfrac{1}{1+K_p}\\)\n\\(\\infty\\)\n\\(\\infty\\)\n\n\n1\n\\(0\\)\n\\(\\dfrac{1}{K_v}\\)\n\\(\\infty\\)\n\n\n2\n\\(0\\)\n\\(0\\)\n\\(\\dfrac{1}{K_a}\\)\n\n\n\n\n\n\n\n\n\nImportant\n\n\nAumentar o tipo do sistema elimina o erro para uma classe de entradas, mas cada integrador adicional contribui \\(-90°\\) de fase — tornando o sistema mais propenso à instabilidade (Aulas 7 e 8)."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#exemplo-sistema-tipo-0-degrau",
+    "href": "Notas/Aula06ErroRegimePermanente.html#exemplo-sistema-tipo-0-degrau",
+    "title": "Erro de Regime Permanente",
+    "section": "Exemplo — Sistema Tipo 0 (Degrau)",
+    "text": "Exemplo — Sistema Tipo 0 (Degrau)\n\\[G(s) = \\frac{10}{(s+1)(s+4)} \\quad\\text{(malha aberta, tipo 0)}\\]\n\\[K_p = \\lim_{s\\to0}G(s) = \\frac{10}{4} = 2{,}5 \\qquad\\implies\\qquad e_{ss} = \\frac{1}{1+K_p} = \\frac{1}{3{,}5} \\approx 0{,}286\\]\n\nSistema Tipo 0 sob degrau: erro constante em regime"
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#exemplo-sistema-tipo-1-rampa",
+    "href": "Notas/Aula06ErroRegimePermanente.html#exemplo-sistema-tipo-1-rampa",
+    "title": "Erro de Regime Permanente",
+    "section": "Exemplo — Sistema Tipo 1 (Rampa)",
+    "text": "Exemplo — Sistema Tipo 1 (Rampa)\n\\[G(s) = \\frac{8}{s(s+1)(s+4)} \\quad\\text{(malha aberta, tipo 1)}\\]\n\\[K_v = \\lim_{s\\to0}sG(s) = \\frac{8}{1\\times4} = 2 \\qquad\\implies\\qquad e_{ss} = \\frac{1}{K_v} = 0{,}5\\]\nNote (slide anterior, painel direito): a saída acompanha a rampa com um atraso constante de 0,5 unidades — o sistema tipo 1 rastreia rampas com erro finito, mas não nulo."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#por-que-aumentar-o-ganho-reduz-mas-não-elimina-o-erro-tipo-0",
+    "href": "Notas/Aula06ErroRegimePermanente.html#por-que-aumentar-o-ganho-reduz-mas-não-elimina-o-erro-tipo-0",
+    "title": "Erro de Regime Permanente",
+    "section": "Por que Aumentar o Ganho Reduz (mas não Elimina) o Erro Tipo 0",
+    "text": "Por que Aumentar o Ganho Reduz (mas não Elimina) o Erro Tipo 0\nPara o sistema tipo 0, \\(e_{ss}=\\dfrac{1}{1+K_p}\\) com \\(K_p \\propto K\\) (ganho do controlador/planta):\n\nAumentar \\(K\\) aumenta \\(K_p\\) e reduz \\(e_{ss}\\), mas nunca o zera (assíntota em zero quando \\(K\\to\\infty\\))\nAumentar \\(K\\) em excesso degrada a resposta transitória (mais sobressinal, possível instabilidade — Aulas 7–8)\nPara eliminar o erro ao degrau é necessário aumentar o tipo do sistema (adicionar um integrador — ação integral do controlador PID, Aula 9)\n\n\n\n\n\n\n\nTip\n\n\nEssa é a principal motivação para a ação integral de um controlador PI/PID: adicionar um polo em \\(s=0\\) à malha aberta para eliminar o erro de regime permanente ao degrau."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#erro-para-sistemas-com-realimentação-não-unitária",
+    "href": "Notas/Aula06ErroRegimePermanente.html#erro-para-sistemas-com-realimentação-não-unitária",
+    "title": "Erro de Regime Permanente",
+    "section": "Erro para Sistemas com Realimentação Não-Unitária",
+    "text": "Erro para Sistemas com Realimentação Não-Unitária\nSe a realimentação não é unitária (\\(H(s)\\neq1\\), ex.: ganho do sensor), o erro correto é definido sobre o sinal atuante \\(E(s) = R(s) - H(s)Y(s)\\), e não simplesmente \\(R(s)-Y(s)\\).\n\n\n\n\n\n\nWarning\n\n\nPara aplicar diretamente as fórmulas de \\(K_p\\), \\(K_v\\), \\(K_a\\) desta aula, redesenhe o diagrama de blocos com realimentação unitária equivalente, movendo \\(H(s)\\) para dentro do ramo direto quando necessário."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#estabilidade-pré-requisito-para-o-erro-de-regime-permanente",
+    "href": "Notas/Aula06ErroRegimePermanente.html#estabilidade-pré-requisito-para-o-erro-de-regime-permanente",
+    "title": "Erro de Regime Permanente",
+    "section": "Estabilidade: Pré-Requisito para o Erro de Regime Permanente",
+    "text": "Estabilidade: Pré-Requisito para o Erro de Regime Permanente\nO TVF e as constantes de erro só são válidos se a malha fechada for estável — caso contrário \\(e(t)\\) não converge e “erro de regime permanente” não tem sentido.\n\n\n\n\n\n\nCritério de Estabilidade (definição)\n\n\nUm sistema LIT é estável (BIBO) se e somente se todos os polos da malha fechada estão no semiplano esquerdo aberto (\\(\\text{Re}(s) &lt; 0\\)).\n\n\n\nAntes de calcular \\(e_{ss}\\), é preciso verificar a estabilidade. Para isso, sem calcular as raízes explicitamente, usamos o critério de Routh-Hurwitz."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#critério-de-routh-hurwitz",
+    "href": "Notas/Aula06ErroRegimePermanente.html#critério-de-routh-hurwitz",
+    "title": "Erro de Regime Permanente",
+    "section": "Critério de Routh-Hurwitz",
+    "text": "Critério de Routh-Hurwitz\nDado o polinômio característico \\(D(s) = a_ns^n + a_{n-1}s^{n-1} + \\cdots + a_1 s + a_0\\), monta-se o array de Routh:\n\\[\n\\begin{array}{c|ccccc}\ns^n & a_n & a_{n-2} & a_{n-4} & \\cdots \\\\\ns^{n-1} & a_{n-1} & a_{n-3} & a_{n-5} & \\cdots \\\\\ns^{n-2} & b_1 & b_2 & b_3 & \\cdots \\\\\n\\vdots & \\vdots & & & \\\\\ns^0 & \\ast & & &\n\\end{array}\n\\]\ncom \\(b_1 = \\dfrac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}\\), \\(b_2 = \\dfrac{a_{n-1}a_{n-4}-a_na_{n-5}}{a_{n-1}}\\), e assim por diante, linha a linha.\n\n\n\n\n\n\nRegra\n\n\nO número de raízes no semiplano direito é igual ao número de trocas de sinal na primeira coluna do array. Sistema estável \\(\\iff\\) nenhuma troca de sinal (todos os elementos da 1ª coluna com o mesmo sinal)."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#routh-hurwitz-exemplo",
+    "href": "Notas/Aula06ErroRegimePermanente.html#routh-hurwitz-exemplo",
+    "title": "Erro de Regime Permanente",
+    "section": "Routh-Hurwitz — Exemplo",
+    "text": "Routh-Hurwitz — Exemplo\nProblema: verificar a estabilidade de \\(D(s) = s^3+6s^2+11s+K\\) para \\(K=6\\) e depois encontrar a faixa de \\(K&gt;0\\) que mantém o sistema estável.\n\\[\n\\begin{array}{c|cc}\ns^3 & 1 & 11 \\\\\ns^2 & 6 & K \\\\\ns^1 & \\dfrac{6\\times11-1\\times K}{6} = 11-\\dfrac{K}{6} & 0\\\\\ns^0 & K &\n\\end{array}\n\\]\nCondições de estabilidade: todos os termos da 1ª coluna positivos:\n\\[K &gt; 0 \\qquad\\text{e}\\qquad 11-\\frac{K}{6}&gt;0 \\implies K&lt;66\\]\n\\[\\boxed{0 &lt; K &lt; 66}\\] — para \\(K=6\\), o sistema é estável (dentro da faixa)."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#casos-especiais-do-array-de-routh",
+    "href": "Notas/Aula06ErroRegimePermanente.html#casos-especiais-do-array-de-routh",
+    "title": "Erro de Regime Permanente",
+    "section": "Casos Especiais do Array de Routh",
+    "text": "Casos Especiais do Array de Routh\n\nZero na primeira coluna (linha não inteiramente nula): substitui-se o zero por \\(\\epsilon \\to 0^+\\) e continua-se o array, analisando o sinal quando \\(\\epsilon\\to0\\).\nLinha inteiramente nula: indica polos simétricos em relação à origem (par imaginário puro, ou pares reais simétricos). Forma-se um polinômio auxiliar com a linha anterior, deriva-se em \\(s\\), e os coeficientes substituem a linha nula.\n\n\n\n\n\n\n\nTip\n\n\nO caso de linha nula é especialmente útil no projeto por LGR (Aula 7): o valor de \\(K\\) que anula uma linha corresponde exatamente ao ganho crítico em que o LGR cruza o eixo \\(j\\omega\\)."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#exercícios",
+    "href": "Notas/Aula06ErroRegimePermanente.html#exercícios",
+    "title": "Erro de Regime Permanente",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nPara \\(G(s) = \\dfrac{20}{(s+2)(s+5)}\\) (malha aberta, realimentação unitária), classifique o tipo, calcule \\(K_p\\) e o erro de regime permanente ao degrau unitário.\nPara \\(G(s) = \\dfrac{K}{s^2(s+3)}\\), classifique o tipo e determine o erro para entradas degrau, rampa e parábola unitárias, para qualquer \\(K&gt;0\\).\nUm sistema tipo 1 deve ter \\(e_{ss}\\leq0{,}05\\) para uma rampa de inclinação 2. Determine o valor mínimo de \\(K_v\\) necessário.\nMonte o array de Routh para \\(D(s)=s^4+2s^3+3s^2+4s+5\\) e determine quantos polos estão no semiplano direito.\nPara \\(D(s) = s^3+2s^2+s+K\\), use Routh-Hurwitz para encontrar a faixa de \\(K&gt;0\\) que garante estabilidade."
+  },
+  {
+    "objectID": "Notas/Aula06ErroRegimePermanente.html#referências",
+    "href": "Notas/Aula06ErroRegimePermanente.html#referências",
+    "title": "Erro de Regime Permanente",
+    "section": "Referências",
+    "text": "Referências"
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#sistema-de-segunda-ordem-forma-padrão",
+    "href": "Notas/Aula04SegundaOrdem.html#sistema-de-segunda-ordem-forma-padrão",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Sistema de Segunda Ordem — Forma Padrão",
+    "text": "Sistema de Segunda Ordem — Forma Padrão\nTodo sistema de segunda ordem sem zeros pode ser escrito na forma padrão:\n\\[\\boxed{G(s) = \\frac{\\omega_n^2}{s^2 + 2\\zeta\\omega_n s + \\omega_n^2}}\\]\n\n\\(\\omega_n\\) — frequência natural não amortecida [rad/s]\n\\(\\zeta\\) — coeficiente de amortecimento (adimensional, \\(\\zeta \\geq 0\\))\nGanho estático unitário: \\(G(0)=1\\)\n\nPolos (raízes de \\(s^2+2\\zeta\\omega_n s+\\omega_n^2=0\\)):\n\\[s_{1,2} = -\\zeta\\omega_n \\pm j\\omega_n\\sqrt{1-\\zeta^2} = -\\zeta\\omega_n \\pm j\\omega_d\\]\nonde \\(\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}\\) é a frequência natural amortecida."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#classificação-pelo-amortecimento",
+    "href": "Notas/Aula04SegundaOrdem.html#classificação-pelo-amortecimento",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Classificação pelo Amortecimento",
+    "text": "Classificação pelo Amortecimento\n\n\n\n\n\n\n\n\n\\(\\zeta\\)\nClassificação\nPolos\n\n\n\n\n\\(\\zeta = 0\\)\nNão amortecido\nimaginários puros \\(\\pm j\\omega_n\\)\n\n\n\\(0 &lt; \\zeta &lt; 1\\)\nSubamortecido\ncomplexos conjugados\n\n\n\\(\\zeta = 1\\)\nCriticamente amortecido\nreais e iguais, \\(s=-\\omega_n\\)\n\n\n\\(\\zeta &gt; 1\\)\nSobreamortecido\nreais e distintos\n\n\n\n\n\n\n\n\n\nTip\n\n\nA maioria dos sistemas de controle é projetada para operar subamortecida (\\(0{,}4 \\lesssim \\zeta \\lesssim 0{,}8\\)), equilibrando velocidade de resposta e sobressinal aceitável."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#resposta-ao-degrau-comparação",
+    "href": "Notas/Aula04SegundaOrdem.html#resposta-ao-degrau-comparação",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Resposta ao Degrau — Comparação",
+    "text": "Resposta ao Degrau — Comparação\n\nResposta ao degrau para diferentes valores de \\(\\zeta\\), \\(\\omega_n=1\\)"
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#geometria-dos-polos-no-plano-s",
+    "href": "Notas/Aula04SegundaOrdem.html#geometria-dos-polos-no-plano-s",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Geometria dos Polos no Plano \\(s\\)",
+    "text": "Geometria dos Polos no Plano \\(s\\)\n\nPolos complexos conjugados e a geometria de \\(\\zeta\\), \\(\\omega_n\\), \\(\\omega_d\\)\\[\\sigma = \\zeta\\omega_n \\quad (\\text{parte real, atenuação})\\qquad \\theta = \\cos^{-1}\\zeta \\quad (\\text{ângulo com o eixo imaginário})\\]\nRetas radiais a partir da origem têm \\(\\zeta\\) constante; arcos de raio \\(\\omega_n\\) têm frequência natural constante."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#caso-subamortecido-resposta-ao-degrau",
+    "href": "Notas/Aula04SegundaOrdem.html#caso-subamortecido-resposta-ao-degrau",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Caso Subamortecido — Resposta ao Degrau",
+    "text": "Caso Subamortecido — Resposta ao Degrau\nPara \\(0 &lt; \\zeta &lt; 1\\), a resposta ao degrau unitário é:\n\\[y(t) = 1 - \\frac{e^{-\\zeta\\omega_n t}}{\\sqrt{1-\\zeta^2}}\\sin\\!\\left(\\omega_d t + \\phi\\right), \\qquad \\phi = \\cos^{-1}\\zeta\\]\n\nEnvoltória exponencial \\(e^{-\\zeta\\omega_n t}\\) modula uma oscilação senoidal de frequência \\(\\omega_d\\)\nQuanto menor \\(\\zeta\\), maior a oscilação (mais sobressinal); quanto menor \\(\\zeta\\omega_n\\), mais lenta a atenuação\n\n\n\n\n\n\n\nNote\n\n\nNo limite \\(\\zeta \\to 0\\): oscilação não amortecida \\(y(t) = 1-\\cos(\\omega_n t)\\), que nunca se acomoda."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#especificações-da-resposta-transitória",
+    "href": "Notas/Aula04SegundaOrdem.html#especificações-da-resposta-transitória",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Especificações da Resposta Transitória",
+    "text": "Especificações da Resposta Transitória\n\nEspecificações de desempenho no domínio do tempo"
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#especificações-fórmulas",
+    "href": "Notas/Aula04SegundaOrdem.html#especificações-fórmulas",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Especificações — Fórmulas",
+    "text": "Especificações — Fórmulas\n\n\n\n\n\n\n\n\nEspecificação\nFórmula\nSignificado\n\n\n\n\nSobressinal máximo\n\\(M_p = e^{-\\zeta\\pi/\\sqrt{1-\\zeta^2}}\\)\npico acima do valor final (fração)\n\n\nTempo de pico\n\\(t_p = \\dfrac{\\pi}{\\omega_d}\\)\ninstante do sobressinal máximo\n\n\nTempo de acomodação (2%)\n\\(t_s = \\dfrac{4}{\\zeta\\omega_n}\\)\ntempo para permanecer em \\(\\pm2\\%\\)\n\n\nTempo de acomodação (5%)\n\\(t_s = \\dfrac{3}{\\zeta\\omega_n}\\)\ntempo para permanecer em \\(\\pm5\\%\\)\n\n\nTempo de subida (0–100%)\n\\(t_r \\approx \\dfrac{1{,}8}{\\omega_n}\\)\naproximação para \\(0{,}3\\lesssim\\zeta\\lesssim0{,}8\\)\n\n\n\n\n\n\n\n\n\nImportant\n\n\nNote que \\(t_s\\) depende apenas de \\(\\sigma=\\zeta\\omega_n\\) (a parte real do polo) — por isso os polos dominantes (Aula 5) bastam para estimar \\(t_s\\) em sistemas de ordem superior."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#relação-entre-m_p-e-zeta",
+    "href": "Notas/Aula04SegundaOrdem.html#relação-entre-m_p-e-zeta",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Relação entre \\(M_p\\) e \\(\\zeta\\)",
+    "text": "Relação entre \\(M_p\\) e \\(\\zeta\\)\nO sobressinal \\(M_p = e^{-\\zeta\\pi/\\sqrt{1-\\zeta^2}}\\) depende apenas de \\(\\zeta\\) — é a base para especificar \\(\\zeta\\) a partir de um sobressinal desejado:\n\\[\\zeta = \\frac{-\\ln(M_p)}{\\sqrt{\\pi^2+\\ln^2(M_p)}}\\]\n\n\n\n\\(\\zeta\\)\n\\(M_p\\) (%)\n\n\\(\\zeta\\)\n\\(M_p\\) (%)\n\n\n\n\n0,1\n72,9\n\n0,6\n9,5\n\n\n0,2\n52,7\n\n0,7\n4,6\n\n\n0,3\n37,2\n\n0,8\n1,5\n\n\n0,4\n25,4\n\n0,9\n0,15\n\n\n0,5\n16,3\n\n1,0\n0\n\n\n\n\n\n\n\n\n\nTip\n\n\nRegra prática de projeto: \\(\\zeta \\approx 0{,}7\\) dá cerca de 5% de sobressinal — compromisso comum entre velocidade e oscilação."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#caso-criticamente-amortecido-e-sobreamortecido",
+    "href": "Notas/Aula04SegundaOrdem.html#caso-criticamente-amortecido-e-sobreamortecido",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Caso Criticamente Amortecido e Sobreamortecido",
+    "text": "Caso Criticamente Amortecido e Sobreamortecido\nCriticamente amortecido (\\(\\zeta=1\\)): polo duplo em \\(s=-\\omega_n\\):\n\\[y(t) = 1 - e^{-\\omega_n t}(1+\\omega_n t)\\]\n\nResposta mais rápida sem oscilação nem sobressinal.\n\nSobreamortecido (\\(\\zeta&gt;1\\)): polos reais distintos \\(s_{1,2} = -\\zeta\\omega_n \\pm \\omega_n\\sqrt{\\zeta^2-1}\\):\n\\[y(t) = 1 + \\frac{e^{s_1 t}}{s_2}\\cdot\\frac{s_2}{s_1-s_2}\\cdots \\quad\\text{(soma de duas exponenciais)}\\]\n\nComporta-se como dois sistemas de 1ª ordem em cascata — o polo mais lento (mais próximo do eixo \\(j\\omega\\)) domina a resposta."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#exemplo-resolvido",
+    "href": "Notas/Aula04SegundaOrdem.html#exemplo-resolvido",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Exemplo Resolvido",
+    "text": "Exemplo Resolvido\nProblema: Projetar \\(\\omega_n\\) e \\(\\zeta\\) de um sistema de 2ª ordem padrão para \\(M_p \\leq 10\\%\\) e \\(t_s \\leq 2\\) s (critério de 2%).\nSolução:\n\nDe \\(M_p=10\\% \\implies \\zeta = \\dfrac{-\\ln(0{,}10)}{\\sqrt{\\pi^2+\\ln^2(0{,}10)}} \\approx 0{,}591\\). Escolhendo \\(\\zeta = 0{,}6\\) (margem de segurança).\nDe \\(t_s = \\dfrac{4}{\\zeta\\omega_n} \\leq 2 \\implies \\omega_n \\geq \\dfrac{4}{0{,}6\\times 2} = 3{,}33\\text{ rad/s}\\).\n\n\\[\\boxed{\\zeta = 0{,}6, \\qquad \\omega_n \\geq 3{,}33 \\text{ rad/s}}\\]\nEsse par \\((\\zeta,\\omega_n)\\) define uma região do plano \\(s\\) onde os polos de malha fechada devem estar — ideia central do projeto por LGR (Aula 7)."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#exercícios",
+    "href": "Notas/Aula04SegundaOrdem.html#exercícios",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nPara \\(G(s) = \\dfrac{25}{s^2+6s+25}\\), identifique \\(\\omega_n\\), \\(\\zeta\\), os polos, \\(M_p\\), \\(t_p\\) e \\(t_s\\) (2%).\nUm sistema de 2ª ordem tem sobressinal de 20% e tempo de pico de 1 s. Determine \\(\\zeta\\), \\(\\omega_n\\) e \\(\\omega_d\\).\nMostre que, para \\(\\zeta=1\\) (crítico), a resposta ao degrau é \\(y(t)=1-e^{-\\omega_nt}(1+\\omega_nt)\\), partindo de \\(Y(s)=\\omega_n^2/[s(s+\\omega_n)^2]\\).\nCompare (qualitativamente, sem simular) as respostas de dois sistemas com mesmo \\(\\omega_n\\) e \\(\\zeta=0{,}3\\) e \\(\\zeta=0{,}9\\): qual tem maior sobressinal? Qual acomoda mais rápido?\nUm sistema deve satisfazer \\(M_p\\leq5\\%\\) e \\(t_s\\leq4\\) s (critério de 2%). Determine a região permitida para \\(\\zeta\\) e para \\(\\sigma=\\zeta\\omega_n\\)."
+  },
+  {
+    "objectID": "Notas/Aula04SegundaOrdem.html#referências",
+    "href": "Notas/Aula04SegundaOrdem.html#referências",
+    "title": "Sistemas de Segunda Ordem",
+    "section": "Referências",
+    "text": "Referências"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#transformada-de-laplace-revisão",
+    "href": "Notas/Aula02ModelagemFT.html#transformada-de-laplace-revisão",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Transformada de Laplace — Revisão",
+    "text": "Transformada de Laplace — Revisão\nA Transformada de Laplace converte equações diferenciais lineares em equações algébricas:\n\\[\\mathcal{L}\\{f(t)\\} = F(s) = \\int_0^{\\infty} f(t)\\,e^{-st}\\,dt, \\qquad s = \\sigma + j\\omega \\in \\mathbb{C}\\]\nPropriedade fundamental — derivação (condições iniciais nulas):\n\\[\\mathcal{L}\\left\\{\\frac{d^n f}{dt^n}\\right\\} = s^n F(s)\\]\n\n\n\n\n\n\n\nPropriedade\nExpressão\n\n\n\n\nLinearidade\n\\(\\mathcal{L}\\{\\alpha f + \\beta g\\} = \\alpha F(s) + \\beta G(s)\\)\n\n\nDeslocamento em \\(s\\)\n\\(\\mathcal{L}\\{e^{-at}f(t)\\} = F(s+a)\\)\n\n\nValor final\n\\(\\displaystyle\\lim_{t\\to\\infty} f(t) = \\lim_{s\\to 0} sF(s)\\) (se o limite existir)\n\n\nValor inicial\n\\(f(0^+) = \\displaystyle\\lim_{s\\to\\infty} sF(s)\\)"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#pares-notáveis-da-transformada-de-laplace",
+    "href": "Notas/Aula02ModelagemFT.html#pares-notáveis-da-transformada-de-laplace",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Pares Notáveis da Transformada de Laplace",
+    "text": "Pares Notáveis da Transformada de Laplace\n\n\n\n\\(f(t)\\), \\(t \\geq 0\\)\n\\(F(s)\\)\n\n\n\n\n\\(\\delta(t)\\) — impulso unitário\n\\(1\\)\n\n\n\\(u(t)\\) — degrau unitário\n\\(\\dfrac{1}{s}\\)\n\n\n\\(t\\) — rampa unitária\n\\(\\dfrac{1}{s^2}\\)\n\n\n\\(e^{-at}\\)\n\\(\\dfrac{1}{s+a}\\)\n\n\n\\(\\sin(\\omega t)\\)\n\\(\\dfrac{\\omega}{s^2+\\omega^2}\\)\n\n\n\\(\\cos(\\omega t)\\)\n\\(\\dfrac{s}{s^2+\\omega^2}\\)\n\n\n\\(t\\,e^{-at}\\)\n\\(\\dfrac{1}{(s+a)^2}\\)\n\n\n\n\n\n\n\n\n\nTip\n\n\nTabelas completas de pares e propriedades estão em qualquer livro-texto de sinais e sistemas ou de controle (Ogata 2010; Nise 2015)."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#função-de-transferência",
+    "href": "Notas/Aula02ModelagemFT.html#função-de-transferência",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Função de Transferência",
+    "text": "Função de Transferência\n\n\n\n\n\n\nDefinição\n\n\nA função de transferência \\(G(s)\\) de um sistema LIT é a razão entre a transformada de Laplace da saída e a da entrada, com condições iniciais nulas:\n\\[G(s) = \\frac{Y(s)}{U(s)}\\]\n\n\n\nPara a EDO geral \\(a_n y^{(n)} + \\cdots + a_0 y = b_m u^{(m)} + \\cdots + b_0 u\\):\n\\[G(s) = \\frac{b_m s^m + \\cdots + b_1 s + b_0}{a_n s^n + \\cdots + a_1 s + a_0} = \\frac{N(s)}{D(s)}\\]\n\nRaízes de \\(N(s)\\): zeros de \\(G(s)\\) — raízes de \\(D(s)\\): polos de \\(G(s)\\)\n\\(D(s) = 0\\) é a equação característica — seus polos determinam a resposta natural (transitória) do sistema"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#exemplo-sistema-massa-mola-amortecedor",
+    "href": "Notas/Aula02ModelagemFT.html#exemplo-sistema-massa-mola-amortecedor",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Exemplo: Sistema Massa-Mola-Amortecedor",
+    "text": "Exemplo: Sistema Massa-Mola-Amortecedor\n\nPela 2ª lei de Newton (\\(F = m\\,\\ddot{x}\\)), com força aplicada \\(F(t)\\), mola de rigidez \\(k\\) e amortecedor viscoso \\(b\\):\n\\[m\\,\\ddot{x}(t) + b\\,\\dot{x}(t) + k\\,x(t) = F(t)\\]"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#exemplo-massa-mola-amortecedor-função-de-transferência",
+    "href": "Notas/Aula02ModelagemFT.html#exemplo-massa-mola-amortecedor-função-de-transferência",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Exemplo: Massa-Mola-Amortecedor — Função de Transferência",
+    "text": "Exemplo: Massa-Mola-Amortecedor — Função de Transferência\nAplicando Laplace com condições iniciais nulas à EDO \\(m\\ddot{x} + b\\dot{x} + kx = F\\):\n\\[m\\,s^2 X(s) + b\\,s\\,X(s) + k\\,X(s) = F(s)\\]\n\\[\\boxed{G(s) = \\frac{X(s)}{F(s)} = \\frac{1}{m s^2 + b s + k}}\\]\n\nSistema de segunda ordem, sem zeros finitos, dois polos (reais ou complexos conjugados, conforme \\(b^2\\) vs. \\(4mk\\))\nModelo idêntico (a menos de nomes de variáveis) ao de um circuito RLC série — a mesma matemática governa domínios físicos distintos"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#exemplo-motor-cc-controlado-pela-armadura",
+    "href": "Notas/Aula02ModelagemFT.html#exemplo-motor-cc-controlado-pela-armadura",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Exemplo: Motor CC Controlado pela Armadura",
+    "text": "Exemplo: Motor CC Controlado pela Armadura\n\nCircuito de armadura: \\(\\quad v_a(t) = R_a\\,i_a(t) + L_a\\dfrac{di_a}{dt} + e_b(t), \\qquad e_b(t) = K_b\\,\\omega(t)\\)\nEixo (torque motor \\(= K_t\\,i_a\\)): \\(\\quad J\\dot\\omega(t) + b\\,\\omega(t) = K_t\\,i_a(t)\\)"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#motor-cc-função-de-transferência",
+    "href": "Notas/Aula02ModelagemFT.html#motor-cc-função-de-transferência",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Motor CC — Função de Transferência",
+    "text": "Motor CC — Função de Transferência\nAplicando Laplace (condições iniciais nulas) às duas equações e eliminando \\(I_a(s)\\):\n\\[(R_a + L_a s)\\,I_a(s) = V_a(s) - K_b\\,\\Omega(s), \\qquad (Js+b)\\,\\Omega(s) = K_t\\,I_a(s)\\]\n\\[\\boxed{\\frac{\\Omega(s)}{V_a(s)} = \\frac{K_t}{(R_a+L_a s)(Js+b) + K_t K_b}}\\]\n\nSe \\(L_a \\approx 0\\) (indutância de armadura desprezível), o modelo se reduz a primeira ordem:\n\n\\[\\frac{\\Omega(s)}{V_a(s)} \\approx \\frac{K_t}{R_a(Js+b) + K_t K_b} = \\frac{K}{\\tau s + 1}\\]\n\n\n\n\n\n\nTip\n\n\nEssa simplificação (motor CC de 1ª ordem) é usada com frequência nas próximas aulas para exemplos de controle de velocidade."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#diagrama-de-blocos",
+    "href": "Notas/Aula02ModelagemFT.html#diagrama-de-blocos",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Diagrama de Blocos",
+    "text": "Diagrama de Blocos\nUm diagrama de blocos representa graficamente as relações entre subsistemas por meio de:\n\nBlocos — contêm a função de transferência do subsistema;\nSetas — indicam o sentido do fluxo de sinal (sempre unidirecional);\nSomadores (círculos) — somam/subtraem sinais, com o sinal indicado em cada seta de entrada;\nPontos de derivação — o mesmo sinal segue para dois ou mais destinos.\n\n\n\n\n\n\n\nTip\n\n\nDiagramas de blocos permitem reduzir sistemas interligados a uma única função de transferência equivalente — é o que faremos nos próximos slides."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#álgebra-de-blocos-associação-em-série",
+    "href": "Notas/Aula02ModelagemFT.html#álgebra-de-blocos-associação-em-série",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Álgebra de Blocos: Associação em Série",
+    "text": "Álgebra de Blocos: Associação em Série\n\nBlocos em cascata multiplicam suas funções de transferência:\n\\[G_{eq}(s) = G_1(s)\\,G_2(s)\\]"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#álgebra-de-blocos-associação-em-paralelo",
+    "href": "Notas/Aula02ModelagemFT.html#álgebra-de-blocos-associação-em-paralelo",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Álgebra de Blocos: Associação em Paralelo",
+    "text": "Álgebra de Blocos: Associação em Paralelo\n\nBlocos em paralelo (saídas somadas) têm suas funções de transferência somadas:\n\\[G_{eq}(s) = G_1(s) + G_2(s)\\]"
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#álgebra-de-blocos-realimentação",
+    "href": "Notas/Aula02ModelagemFT.html#álgebra-de-blocos-realimentação",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Álgebra de Blocos: Realimentação",
+    "text": "Álgebra de Blocos: Realimentação\n\nPara a malha com realimentação negativa:\n\\[Y(s) = G(s)\\big[X(s) - H(s)Y(s)\\big] \\implies \\boxed{G_{eq}(s) = \\frac{Y(s)}{X(s)} = \\frac{G(s)}{1+G(s)H(s)}}\\]\nPara realimentação positiva, o sinal do denominador se inverte: \\(G_{eq}(s) = \\dfrac{G(s)}{1-G(s)H(s)}\\).\n\n\n\n\n\n\nImportant\n\n\nEsta é provavelmente a fórmula mais usada em todo o curso — memorize-a."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#regra-de-mason-fórmula-do-ganho",
+    "href": "Notas/Aula02ModelagemFT.html#regra-de-mason-fórmula-do-ganho",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Regra de Mason (Fórmula do Ganho)",
+    "text": "Regra de Mason (Fórmula do Ganho)\nPara diagramas de blocos com múltiplas malhas, a redução por álgebra de blocos pode ser trabalhosa. A regra de Mason calcula a função de transferência equivalente diretamente do grafo de fluxo de sinal:\n\\[G_{eq}(s) = \\frac{\\sum_k P_k \\Delta_k}{\\Delta}\\]\n\n\\(P_k\\): ganho do \\(k\\)-ésimo caminho direto (entrada → saída, sem repetir nó)\n\\(\\Delta = 1 - \\sum L_i + \\sum L_i L_j - \\sum L_i L_j L_k + \\cdots\\) (somas de ganhos de malhas individuais, produtos de malhas não-tocantes dois a dois, três a três, …)\n\\(\\Delta_k\\): cofator de \\(\\Delta\\) removendo as malhas que tocam o caminho \\(k\\)\n\n\n\n\n\n\n\nTip\n\n\nDuas malhas são não-tocantes se não compartilham nenhum nó. A regra de Mason evita a álgebra passo a passo, mas exige cuidado na identificação de malhas e caminhos."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#exemplo-redução-de-um-diagrama-com-múltiplas-malhas",
+    "href": "Notas/Aula02ModelagemFT.html#exemplo-redução-de-um-diagrama-com-múltiplas-malhas",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Exemplo: Redução de um Diagrama com Múltiplas Malhas",
+    "text": "Exemplo: Redução de um Diagrama com Múltiplas Malhas\n\nMalhas: \\(L_1 = -G_2H_1\\) (em torno de \\(G_2\\)) e \\(L_2 = -G_1G_2G_3H_2\\) (malha externa) — não-tocantes entre si apenas se não compartilharem nós (aqui compartilham, via \\(G_2\\): são tocantes).\nCaminho direto: \\(P_1 = G_1G_2G_3\\), que toca ambas as malhas \\(\\implies \\Delta_1 = 1\\)."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#exemplo-solução-por-mason",
+    "href": "Notas/Aula02ModelagemFT.html#exemplo-solução-por-mason",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Exemplo — Solução por Mason",
+    "text": "Exemplo — Solução por Mason\n\\[\\Delta = 1 - (L_1+L_2) = 1 + G_2H_1 + G_1G_2G_3H_2\\]\n\\[\\boxed{\\frac{Y(s)}{R(s)} = \\frac{P_1\\Delta_1}{\\Delta} = \\frac{G_1G_2G_3}{1+G_2H_1+G_1G_2G_3H_2}}\\]\n\n\n\n\n\n\nTip\n\n\nVerificação por álgebra de blocos: reduza primeiro a malha interna (\\(G_2\\) com realimentação \\(H_1\\)) para \\(\\dfrac{G_2}{1+G_2H_1}\\), depois multiplique em série por \\(G_1\\) e \\(G_3\\), e finalmente feche a malha externa com \\(H_2\\). O resultado é idêntico."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#exercícios",
+    "href": "Notas/Aula02ModelagemFT.html#exercícios",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nObtenha a função de transferência \\(X(s)/F(s)\\) de um sistema massa-mola-amortecedor com \\(m=2\\text{ kg}\\), \\(b=4\\text{ N·s/m}\\), \\(k=8\\text{ N/m}\\).\nPara o motor CC com \\(R_a=1\\,\\Omega\\), \\(L_a\\approx0\\), \\(J=0{,}02\\text{ kg·m}^2\\), \\(b=0{,}1\\text{ N·m·s}\\), \\(K_t=K_b=0{,}05\\), obtenha \\(\\Omega(s)/V_a(s)\\) na forma \\(K/(\\tau s+1)\\).\nReduza por álgebra de blocos um sistema com \\(G_1(s)\\) e \\(G_2(s)\\) em série, seguidos de realimentação unitária negativa em torno do conjunto.\nRefaça o exemplo de redução com múltiplas malhas usando somente álgebra de blocos (sem Mason) e confirme o resultado obtido em aula.\nEnuncie as condições para que duas malhas sejam consideradas “não-tocantes” na regra de Mason e dê um exemplo de diagrama onde isso ocorre."
+  },
+  {
+    "objectID": "Notas/Aula02ModelagemFT.html#referências",
+    "href": "Notas/Aula02ModelagemFT.html#referências",
+    "title": "Modelagem e Função de Transferência",
+    "section": "Referências",
+    "text": "Referências\n\n\nNise, Norman S. 2015. Engenharia de Sistemas de Controle. 7th ed. LTC.\n\n\nOgata, Katsuhiko. 2010. Engenharia de Controle Moderno. 5th ed. Prentice Hall."
+  },
+  {
+    "objectID": "Notas/Aula00PlanoEnsino.html#identificação",
+    "href": "Notas/Aula00PlanoEnsino.html#identificação",
+    "title": "Plano de Ensino",
+    "section": "Identificação",
+    "text": "Identificação\n\n\n\nCurso: Engenharia Elétrica\nCarga horária: 60 horas\nPré-requisitos: Análise de Sistemas Lineares (Transformada de Laplace)\nFerramentas: MATLAB/Octave ou Python (python-control)\n\n\nEmenta: Introdução aos sistemas de controle: malha aberta e malha fechada. Modelagem de sistemas dinâmicos por função de transferência. Diagrama de blocos e álgebra de blocos. Resposta transitória de sistemas de primeira e de segunda ordem. Efeito de polos e zeros adicionais. Erro de regime permanente e tipo de sistema. Estabilidade e critério de Routh-Hurwitz. Lugar geométrico das raízes (LGR) e projeto por LGR. Resposta em frequência: diagramas de Bode, margens de ganho e de fase. Controladores PID: ação proporcional, integral e derivativa; sintonia."
+  },
+  {
+    "objectID": "Notas/Aula00PlanoEnsino.html#objetivos",
+    "href": "Notas/Aula00PlanoEnsino.html#objetivos",
+    "title": "Plano de Ensino",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nCompreender a terminologia e a estrutura de sistemas de controle em malha aberta e malha fechada.\nObter modelos de sistemas dinâmicos (mecânicos, elétricos, eletromecânicos) na forma de função de transferência.\nReduzir diagramas de blocos por álgebra de blocos e pela regra de Mason.\nAnalisar a resposta transitória de sistemas de primeira e segunda ordem a partir da localização dos polos.\nCalcular o erro de regime permanente e classificar sistemas por tipo.\nEsboçar e interpretar o lugar geométrico das raízes (LGR) para análise e projeto de controladores.\nInterpretar diagramas de Bode e determinar margens de ganho e de fase.\nProjetar e sintonizar controladores PID para especificações de desempenho.\n\n\n\n\n\n\n\nNote\n\n\nO curso é inteiramente no domínio contínuo e usa a função de transferência como modelo — a continuação natural é Sistemas de Controle II (espaço de estados e controle digital)."
+  },
+  {
+    "objectID": "Notas/Aula00PlanoEnsino.html#bibliografia",
+    "href": "Notas/Aula00PlanoEnsino.html#bibliografia",
+    "title": "Plano de Ensino",
+    "section": "Bibliografia",
+    "text": "Bibliografia\n\nOgata, K. — Engenharia de Controle Moderno. 5ª ed. Prentice Hall (Ogata 2010).\nNise, N. S. — Engenharia de Sistemas de Controle. 7ª ed. LTC (Nise 2015).\nDorf, R. C. & Bishop, R. H. — Sistemas de Controle Moderno. 13ª ed. Pearson (Dorf and Bishop 2018).\nFranklin, G. F. et al. — Feedback Control of Dynamic Systems. 7ª ed. Pearson (Franklin et al. 2013)."
+  },
+  {
+    "objectID": "Notas/Aula00PlanoEnsino.html#avaliação",
+    "href": "Notas/Aula00PlanoEnsino.html#avaliação",
+    "title": "Plano de Ensino",
+    "section": "Avaliação",
+    "text": "Avaliação\n\nTeste 1 — \\(T_1\\): 3,0 pts — Introdução, modelagem, função de transferência e diagrama de blocos;\nTeste 2 — \\(T_2\\): 3,5 pts — Resposta transitória (1ª/2ª ordem, polos dominantes) e erro de regime permanente;\nTeste 3 — \\(T_3\\): 3,5 pts — LGR, resposta em frequência e controladores PID;\n\n\\[N_f = T_1 + T_2 + T_3\\]\n\n\\(N_f \\geq 9,0\\): EXC · \\(7,0 \\leq N_f &lt; 9,0\\): BOM · \\(5,0 \\leq N_f &lt; 7,0\\): REG · \\(N_f &lt; 5,0\\): INS.\nFrequência mínima: 75% Regulamento de Graduação da UFPA, Art. 18."
+  },
+  {
+    "objectID": "Notas/Aula00PlanoEnsino.html#cronograma",
+    "href": "Notas/Aula00PlanoEnsino.html#cronograma",
+    "title": "Plano de Ensino",
+    "section": "Cronograma",
+    "text": "Cronograma\n\n\n\n\n\n\n\nSemanas\nConteúdo\n\n\n\n\n1\nIntrodução a sistemas de controle: malha aberta/fechada, terminologia\n\n\n2–3\nModelagem matemática; Laplace; função de transferência; diagrama de blocos\n\n\n4\nSistemas de primeira ordem\n\n\n5–6\nSistemas de segunda ordem: sub/super/criticamente amortecido\n\n\n7\nResposta transitória de ordem superior; polos dominantes\n\n\n8\nTeste 1\n\n\n9–10\nErro de regime permanente; tipo de sistema; Routh-Hurwitz\n\n\n11–12\nLugar geométrico das raízes (LGR)\n\n\n13\nTeste 2\n\n\n14\nResposta em frequência: Bode, margens de ganho e fase\n\n\n15\nControladores PID: P, PI, PD, PID; sintonia de Ziegler-Nichols\n\n\n16\nTeste 3 e revisão\n\n\n\n\n\n\n\nDorf, Richard C., and Robert H. Bishop. 2018. Sistemas de Controle Moderno. 13th ed. Pearson.\n\n\nFranklin, Gene F., J. David Powell, and Abbas Emami-Naeini. 2013. Feedback Control of Dynamic Systems. 7th ed. Pearson.\n\n\nNise, Norman S. 2015. Engenharia de Sistemas de Controle. 7th ed. LTC.\n\n\nOgata, Katsuhiko. 2010. Engenharia de Controle Moderno. 5th ed. Prentice Hall."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Introdução aos Sistemas de Controle",
+    "title": "Sistemas de Controle I",
     "section": "",
-    "text": "Notas de aula de Sistemas de Controle II - Espaço de Estados:\nTurma de 2024 da FEE - CAMTUC - UFPA.\n\nAula 0 - Plano de Ensino\nAula 1 - Introdução aos Sistemas de Controle"
+    "text": "Notas de aula de Sistemas de Controle I — Controle Clássico: modelagem por função de transferência, resposta transitória de sistemas de primeira e segunda ordem, erro de regime permanente, lugar geométrico das raízes, resposta em frequência e controladores PID."
+  },
+  {
+    "objectID": "index.html#avaliações",
+    "href": "index.html#avaliações",
+    "title": "Sistemas de Controle I",
+    "section": "Avaliações",
+    "text": "Avaliações\n\nAvaliação 1 - Avaliação Exemplo (modelo)"
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#o-que-é-controle-automático",
+    "href": "Notas/Aula01Introducao.html#o-que-é-controle-automático",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "O que é Controle Automático?",
+    "text": "O que é Controle Automático?\n\n\n\nControle é o processo de fazer um sistema físico se comportar de uma maneira desejada\nUm sistema de controle manipula variáveis de entrada para que a saída siga um comportamento especificado\nObjetivo: fazer a saída \\(y(t)\\) rastrear uma referência \\(r(t)\\), mesmo na presença de perturbações e incertezas no modelo da planta\n\n\nAplicações:\n\nControle de temperatura (fornos, ar-condicionado)\nControle de velocidade (cruise control, motores)\nControle de posição (robótica, CNC, antenas)\nControle de nível (tanques, caldeiras)\nReguladores de tensão\nPiloto automático (aeronaves, drones)"
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#um-pouco-de-história",
+    "href": "Notas/Aula01Introducao.html#um-pouco-de-história",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Um Pouco de História",
+    "text": "Um Pouco de História\n\n1788 — regulador centrífugo de Watt para máquinas a vapor (primeiro controle de realimentação amplamente usado na indústria)\n1868 — James Clerk Maxwell analisa matematicamente a estabilidade do regulador de Watt (Maxwell 1868)\n1927–1940 — Black, Nyquist e Bode (Bell Labs) desenvolvem a teoria de realimentação e resposta em frequência para amplificadores telefônicos\n1942 — Ziegler e Nichols publicam regras práticas de sintonia de controladores PID (Ziegler and Nichols 1942)\n1950–60 — consolidação do “controle clássico” (Laplace, função de transferência, LGR de Evans) e início do controle moderno (espaço de estados)\n\n\n\n\n\n\n\nNote\n\n\nO controle clássico, tema deste curso, opera no domínio da frequência complexa \\(s\\) e é a base histórica e conceitual de toda a teoria de controle moderna."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#componentes-de-um-sistema-de-controle",
+    "href": "Notas/Aula01Introducao.html#componentes-de-um-sistema-de-controle",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Componentes de um Sistema de Controle",
+    "text": "Componentes de um Sistema de Controle\n\n\n\n\n\nComponente\nDescrição\n\n\n\n\nPlanta\nSistema físico a ser controlado\n\n\nAtuador\nDispositivo que age sobre a planta\n\n\nSensor\nMede a saída real do sistema\n\n\nControlador\nCalcula a ação de controle\n\n\nReferência \\(r(t)\\)\nValor desejado para a saída\n\n\nErro \\(e(t)\\)\nDiferença entre \\(r(t)\\) e a saída medida\n\n\nPerturbação \\(d(t)\\)\nSinal indesejado que afeta a saída\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[e(t) = r(t) - y(t)\\]"
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#malha-aberta",
+    "href": "Notas/Aula01Introducao.html#malha-aberta",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Malha Aberta",
+    "text": "Malha Aberta\n\n\nA saída não é medida nem comparada com a referência\nO controlador aplica uma ação pré-calculada, independente do resultado real\nSimples e barato, mas sensível a perturbações e a variações da planta\n\n\n\n\n\n\n\nTip\n\n\nExemplos: torradeira (tempo fixo), máquina de lavar (ciclo fixo), semáforo de tempo fixo."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#malha-fechada-realimentação-negativa",
+    "href": "Notas/Aula01Introducao.html#malha-fechada-realimentação-negativa",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Malha Fechada (Realimentação Negativa)",
+    "text": "Malha Fechada (Realimentação Negativa)\n\n\nA saída é medida (pelo sensor \\(H(s)\\)) e comparada com a referência\nO controlador atua sobre o erro \\(e(t) = r(t) - y(t)\\)\nRobusto a perturbações e a variações paramétricas da planta; pode corrigir erros automaticamente\n\n\n\n\n\n\n\nTip\n\n\nExemplos: termostato, piloto automático, controle de velocidade de cruzeiro."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#malha-aberta-vs.-malha-fechada",
+    "href": "Notas/Aula01Introducao.html#malha-aberta-vs.-malha-fechada",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Malha Aberta vs. Malha Fechada",
+    "text": "Malha Aberta vs. Malha Fechada\n\n\n\n\n\n\n\n\n\nMalha Aberta\nMalha Fechada\n\n\n\n\nMede a saída?\nNão\nSim\n\n\nCusto/complexidade\nBaixo\nMaior (sensor + comparação)\n\n\nSensibilidade a perturbações\nAlta\nReduzida\n\n\nSensibilidade a variações da planta\nAlta\nReduzida\n\n\nEstabilidade\nSempre que a planta for estável\nPode instabilizar se mal projetada\n\n\nPrecisão em regime permanente\nDepende só da planta\nPode ser melhorada pelo controlador\n\n\n\n\n\n\n\n\n\nImportant\n\n\nA realimentação não é grátis: ela introduz o risco de instabilidade e exige um sensor confiável. Grande parte deste curso trata de como projetar controladores que explorem os benefícios da realimentação com segurança."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#sinais-e-variáveis-do-sistema",
+    "href": "Notas/Aula01Introducao.html#sinais-e-variáveis-do-sistema",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Sinais e Variáveis do Sistema",
+    "text": "Sinais e Variáveis do Sistema\nEm um sistema de controle em malha fechada, identificamos:\n\n\\(r(t)\\) — referência ou set point: valor desejado da saída\n\\(y(t)\\) — saída controlada: variável que se deseja regular\n\\(e(t) = r(t) - y(t)\\) — sinal de erro atuante\n\\(u(t)\\) — sinal de controle: saída do controlador, entrada da planta\n\\(d(t)\\) — perturbação: sinal indesejado que afeta a saída\n\\(n(t)\\) — ruído de medição (frequentemente desprezado em uma primeira análise)\n\n\n\n\n\n\n\nNote\n\n\nO controlador \\(C(s)\\) é projetado para que \\(y(t) \\to r(t)\\) mesmo na presença de \\(d(t)\\) e de incertezas em \\(G(s)\\)."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#modelagem-matemática-motivação",
+    "href": "Notas/Aula01Introducao.html#modelagem-matemática-motivação",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Modelagem Matemática — Motivação",
+    "text": "Modelagem Matemática — Motivação\nPara projetar um controlador precisamos de um modelo matemático da planta que relacione a entrada \\(u(t)\\) com a saída \\(y(t)\\).\n\n\nEquação Diferencial Ordinária (EDO)\nSistema linear invariante no tempo (LIT) de ordem \\(n\\):\n\\[a_n \\frac{d^n y}{dt^n} + \\cdots + a_1 \\frac{dy}{dt} + a_0 y = b_m \\frac{d^m u}{dt^m} + \\cdots + b_0 u\\]\n\nCoeficientes \\(a_i, b_i\\) constantes reais\nDifícil de manipular algebricamente e de generalizar para blocos interligados\n\n\nA solução: Transformada de Laplace\n\nConverte EDOs em equações algébricas em \\(s\\)\nIntroduz a função de transferência \\(G(s) = Y(s)/U(s)\\)\nPermite representar e combinar subsistemas por diagramas de blocos\n\nEsse é o tema da próxima aula."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#objetivos-de-um-projeto-de-controle",
+    "href": "Notas/Aula01Introducao.html#objetivos-de-um-projeto-de-controle",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Objetivos de um Projeto de Controle",
+    "text": "Objetivos de um Projeto de Controle\nUm controlador é projetado para atender a especificações de três naturezas:\n\nEstabilidade — requisito mínimo: o sistema em malha fechada não pode divergir\nResposta transitória — velocidade e qualidade da resposta (tempo de subida, sobressinal, tempo de acomodação)\nErro de regime permanente — precisão da saída após o transitório desaparecer\n\n\n\n\n\n\n\nImportant\n\n\nEsses três objetivos frequentemente competem entre si (ex.: reduzir o erro aumentando o ganho tende a piorar o sobressinal e pode até instabilizar o sistema). Todo o curso constrói ferramentas para navegar esse compromisso."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#roteiro-do-curso",
+    "href": "Notas/Aula01Introducao.html#roteiro-do-curso",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Roteiro do Curso",
+    "text": "Roteiro do Curso\n\n\n\n\n\n\n\nBloco\nConteúdo\n\n\n\n\nModelagem\nLaplace, função de transferência, diagrama de blocos\n\n\nResposta transitória\nSistemas de 1ª e 2ª ordem, polos dominantes\n\n\nRegime permanente\nErro de regime permanente, tipo de sistema\n\n\nEstabilidade e projeto no domínio de \\(s\\)\nRouth-Hurwitz, Lugar Geométrico das Raízes (LGR)\n\n\nDomínio da frequência\nDiagramas de Bode, margens de ganho e fase\n\n\nControladores\nAção P, PI, PD, PID e sintonia"
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#exercícios",
+    "href": "Notas/Aula01Introducao.html#exercícios",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nCite três sistemas de controle do seu cotidiano e classifique cada um como malha aberta ou malha fechada, justificando.\nPara um sistema de controle de temperatura de um chuveiro elétrico com termostato, identifique \\(r(t)\\), \\(y(t)\\), \\(u(t)\\), \\(e(t)\\) e uma possível perturbação \\(d(t)\\).\nExplique, em suas palavras, por que a realimentação negativa reduz a sensibilidade do sistema a variações na planta, mas pode introduzir risco de instabilidade.\nPesquise e descreva resumidamente o funcionamento do regulador centrífugo de Watt (1788) e sua importância histórica para a teoria de controle."
+  },
+  {
+    "objectID": "Notas/Aula01Introducao.html#referências",
+    "href": "Notas/Aula01Introducao.html#referências",
+    "title": "Introdução a Sistemas de Controle",
+    "section": "Referências",
+    "text": "Referências\n\n\nMaxwell, James Clerk. 1868. “On Governors.” Proceedings of the Royal Society of London 16: 270–83.\n\n\nZiegler, John G., and Nathaniel B. Nichols. 1942. “Optimum Settings for Automatic Controllers.” Transactions of the ASME 64: 759–68."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#sistema-de-primeira-ordem-forma-padrão",
+    "href": "Notas/Aula03PrimeiraOrdem.html#sistema-de-primeira-ordem-forma-padrão",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Sistema de Primeira Ordem — Forma Padrão",
+    "text": "Sistema de Primeira Ordem — Forma Padrão\nTodo sistema de primeira ordem (um único polo real, sem zeros) pode ser escrito na forma padrão:\n\\[\\boxed{G(s) = \\frac{K}{\\tau s + 1} = \\frac{K/\\tau}{s+1/\\tau}}\\]\n\n\\(K\\) — ganho estático (ganho DC): \\(K = G(0)\\)\n\\(\\tau\\) — constante de tempo [s]: quanto menor \\(\\tau\\), mais rápida a resposta\nPolo único em \\(s = -1/\\tau\\) (no semiplano esquerdo se \\(\\tau &gt; 0\\))\n\n\n\n\n\n\n\nTip\n\n\nExemplos físicos: circuito RC/RL, sistema térmico de primeira ordem, motor CC desprezando a indutância de armadura (Aula 2), nível de um tanque com escoamento livre."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#polo-de-um-sistema-de-primeira-ordem",
+    "href": "Notas/Aula03PrimeiraOrdem.html#polo-de-um-sistema-de-primeira-ordem",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Polo de um Sistema de Primeira Ordem",
+    "text": "Polo de um Sistema de Primeira Ordem\n\nPolo em \\(s=-1/\\tau\\)Quanto mais à esquerda o polo estiver no plano \\(s\\) (maior \\(1/\\tau\\), menor \\(\\tau\\)), mais rápida é a resposta do sistema."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#resposta-ao-degrau",
+    "href": "Notas/Aula03PrimeiraOrdem.html#resposta-ao-degrau",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Resposta ao Degrau",
+    "text": "Resposta ao Degrau\nPara uma entrada degrau unitário \\(U(s) = 1/s\\):\n\\[Y(s) = G(s)\\,U(s) = \\frac{K}{\\tau s+1}\\cdot\\frac{1}{s} = \\frac{K}{s} - \\frac{K\\tau}{\\tau s + 1}\\]\nInvertendo por Laplace:\n\\[\\boxed{y(t) = K\\left(1 - e^{-t/\\tau}\\right), \\quad t \\geq 0}\\]\n\nResposta monotônica, sem oscilação nem sobressinal\n\\(y(0) = 0\\); \\(y(\\infty) = K\\) (valor final, pelo teorema do valor final)"
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#resposta-ao-degrau-gráfico",
+    "href": "Notas/Aula03PrimeiraOrdem.html#resposta-ao-degrau-gráfico",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Resposta ao Degrau — Gráfico",
+    "text": "Resposta ao Degrau — Gráfico\n\nResposta ao degrau para diferentes constantes de tempoQuanto menor \\(\\tau\\), mais rapidamente a resposta se aproxima do valor final \\(K\\) (aqui, \\(K=1\\))."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#a-constante-de-tempo-tau",
+    "href": "Notas/Aula03PrimeiraOrdem.html#a-constante-de-tempo-tau",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "A Constante de Tempo \\(\\tau\\)",
+    "text": "A Constante de Tempo \\(\\tau\\)\n\n\n\n\n\n\nInterpretação de \\(\\tau\\)\n\n\nEm \\(t = \\tau\\), a resposta atinge 63,2% do valor final:\n\\[y(\\tau) = K(1-e^{-1}) \\approx 0{,}632\\,K\\]\n\n\n\n\n\n\n\\(t\\)\n\\(y(t)/K\\)\n% do valor final\n\n\n\n\n\\(\\tau\\)\n\\(1-e^{-1}\\)\n63,2%\n\n\n\\(2\\tau\\)\n\\(1-e^{-2}\\)\n86,5%\n\n\n\\(3\\tau\\)\n\\(1-e^{-3}\\)\n95,0%\n\n\n\\(4\\tau\\)\n\\(1-e^{-4}\\)\n98,2%\n\n\n\\(5\\tau\\)\n\\(1-e^{-5}\\)\n99,3%\n\n\n\n\n\n\n\n\n\nTip\n\n\nRegra prática: a resposta é considerada acomodada após \\(4\\tau\\) a \\(5\\tau\\) (critério de 2% ou 1%)."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#especificações-de-tempo-primeira-ordem",
+    "href": "Notas/Aula03PrimeiraOrdem.html#especificações-de-tempo-primeira-ordem",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Especificações de Tempo — Primeira Ordem",
+    "text": "Especificações de Tempo — Primeira Ordem\nPara um sistema de primeira ordem em resposta ao degrau, definem-se:\n\nTempo de subida \\(t_r\\) (10%–90%): \\(\\quad t_r = \\tau\\,\\ln(9) \\approx 2{,}2\\,\\tau\\)\nTempo de acomodação \\(t_s\\) (critério de 2%): \\(\\quad t_s = 4\\,\\tau\\)\nTempo de acomodação \\(t_s\\) (critério de 1%): \\(\\quad t_s = 4{,}6\\,\\tau\\)\n\n\n\n\n\n\n\nNote\n\n\nNão há sobressinal (\\(M_p = 0\\)) em um sistema de primeira ordem puro — o sobressinal só aparece em sistemas de ordem 2 ou superior com polos complexos, tema da próxima aula."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#resposta-à-rampa-e-ao-impulso",
+    "href": "Notas/Aula03PrimeiraOrdem.html#resposta-à-rampa-e-ao-impulso",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Resposta à Rampa e ao Impulso",
+    "text": "Resposta à Rampa e ao Impulso\nEntrada rampa \\(u(t) = t \\implies U(s) = 1/s^2\\):\n\\[y(t) = K\\left(t - \\tau + \\tau e^{-t/\\tau}\\right) \\;\\xrightarrow{t\\to\\infty}\\; K(t-\\tau)\\]\nA saída rastreia a rampa com erro de regime permanente constante igual a \\(K\\tau\\) (ou \\(\\tau\\), se \\(K=1\\)) — antecipação do que veremos na Aula 6.\nEntrada impulso \\(u(t)=\\delta(t) \\implies U(s)=1\\):\n\\[y(t) = \\frac{K}{\\tau}\\,e^{-t/\\tau}\\]\nResposta ao impulso é a derivada da resposta ao degrau — propriedade geral de sistemas LIT."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#identificação-experimental-de-tau-e-k",
+    "href": "Notas/Aula03PrimeiraOrdem.html#identificação-experimental-de-tau-e-k",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Identificação Experimental de \\(\\tau\\) e \\(K\\)",
+    "text": "Identificação Experimental de \\(\\tau\\) e \\(K\\)\nDado um registro experimental da resposta ao degrau de amplitude \\(A\\):\n\n\\(K = \\dfrac{y(\\infty)}{A}\\) (razão entre o valor final e a amplitude do degrau)\n\\(\\tau\\) = tempo para atingir 63,2% do valor final, ou\n\\(\\tau\\) = inverso da inclinação inicial normalizada: \\(\\tau = \\dfrac{y(\\infty)}{\\dot y(0^+)}\\)\n\n\n\n\n\n\n\nTip\n\n\nEsse procedimento gráfico é a base de métodos de identificação de sistemas usados na prática industrial (ex.: sintonia de malhas de temperatura e vazão)."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#exemplo-resolvido",
+    "href": "Notas/Aula03PrimeiraOrdem.html#exemplo-resolvido",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Exemplo Resolvido",
+    "text": "Exemplo Resolvido\nProblema: Um sensor de temperatura tem resposta ao degrau que atinge 63,2% do valor final em 3 s e se estabiliza em 20 °C para uma entrada em degrau de 20 °C aplicada em \\(t=0\\).\nSolução:\n\n\\(K = 20/20 = 1\\) (ganho unitário — a saída em regime é igual à entrada)\n\\(\\tau = 3\\) s (tempo para 63,2%)\n\n\\[G(s) = \\frac{1}{3s+1}, \\qquad y(t) = 20\\left(1-e^{-t/3}\\right)\\ °\\text{C}\\]\n\\[t_s \\text{ (2\\%)} = 4\\tau = 12\\text{ s}, \\qquad t_r = 2{,}2\\tau \\approx 6{,}6\\text{ s}\\]"
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#exercícios",
+    "href": "Notas/Aula03PrimeiraOrdem.html#exercícios",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nUm sistema de primeira ordem tem \\(\\tau = 0{,}5\\) s e \\(K=2\\). Escreva \\(G(s)\\), obtenha \\(y(t)\\) para entrada degrau unitário e calcule \\(t_s\\) (2%).\nUm motor CC (aproximação de 1ª ordem) atinge 63,2% da velocidade final em 0,2 s. Estime \\(\\tau\\) e o tempo necessário para atingir 98% da velocidade final.\nA partir de \\(y(t) = 5(1-e^{-2t})\\), identifique \\(K\\), \\(\\tau\\), o polo do sistema e o tempo de subida \\(t_r\\).\nMostre, a partir de \\(Y(s)=G(s)/s\\) com \\(G(s)=K/(\\tau s+1)\\), os passos de frações parciais que levam a \\(y(t) = K(1-e^{-t/\\tau})\\).\nExplique por que a resposta ao impulso de um sistema de 1ª ordem é proporcional à derivada da resposta ao degrau, usando a propriedade de derivação da Transformada de Laplace."
+  },
+  {
+    "objectID": "Notas/Aula03PrimeiraOrdem.html#referências",
+    "href": "Notas/Aula03PrimeiraOrdem.html#referências",
+    "title": "Sistemas de Primeira Ordem",
+    "section": "Referências",
+    "text": "Referências"
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#sistemas-de-ordem-superior",
+    "href": "Notas/Aula05RespostaTransitoria.html#sistemas-de-ordem-superior",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Sistemas de Ordem Superior",
+    "text": "Sistemas de Ordem Superior\nA maioria dos sistemas reais tem mais de dois polos (e possivelmente zeros). A resposta ao degrau de um sistema de ordem \\(n\\) com polos distintos é uma soma de modos:\n\\[y(t) = K + \\sum_{i} A_i\\,e^{-\\sigma_i t} + \\sum_{j} B_j\\,e^{-\\sigma_j t}\\cos(\\omega_{d,j} t + \\phi_j)\\]\n\nCada polo real contribui um termo exponencial; cada par complexo conjugado, um termo oscilatório amortecido\nAs fórmulas de \\(M_p\\), \\(t_p\\), \\(t_s\\) da Aula 4 não se aplicam diretamente — mas frequentemente podemos aproximar o sistema por um par de polos dominantes"
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#polos-dominantes",
+    "href": "Notas/Aula05RespostaTransitoria.html#polos-dominantes",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Polos Dominantes",
+    "text": "Polos Dominantes\n\n\n\n\n\n\nCritério de dominância (regra prática)\n\n\nUm par de polos complexos conjugados é considerado dominante se os demais polos têm parte real pelo menos 5 vezes mais negativa:\n\\[\\text{Re}(s_{\\text{outros}}) \\leq 5\\times\\text{Re}(s_{\\text{dominante}})\\]\n\n\n\n\nModos associados a polos mais à esquerda decaem muito mais rápido (\\(e^{-\\sigma t}\\)) e contribuem pouco após o transitório inicial\nSe a dominância se verifica, o sistema completo pode ser aproximado por um sistema de 2ª ordem equivalente, usando as fórmulas já conhecidas"
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#aproximação-por-polos-dominantes-exemplo",
+    "href": "Notas/Aula05RespostaTransitoria.html#aproximação-por-polos-dominantes-exemplo",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Aproximação por Polos Dominantes — Exemplo",
+    "text": "Aproximação por Polos Dominantes — Exemplo\n\nSistema completo (4ª ordem) vs. aproximação por polos dominantes (2ª ordem)O sistema de 4ª ordem tem um par de polos dominantes com \\(\\zeta\\omega_n \\approx 0{,}5\\) e dois polos rápidos adicionais — a resposta de 2ª ordem captura bem a forma geral, com pequeno desvio no início."
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#cancelamento-polo-zero",
+    "href": "Notas/Aula05RespostaTransitoria.html#cancelamento-polo-zero",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Cancelamento Polo-Zero",
+    "text": "Cancelamento Polo-Zero\nQuando um zero está muito próximo de um polo não-dominante, seus efeitos se aproximam de um cancelamento mútuo — o resíduo associado àquele modo torna-se pequeno e sua contribuição à resposta é desprezível.\n\n\n\n\n\n\nTip\n\n\nCancelamento (quase) exato de polo-zero é uma técnica de projeto de controladores (ex.: controlador PD ou PI cancelando um polo lento da planta) — veremos isso na Aula 9.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nCancelamento nunca é exato na prática (incerteza de modelo) — polos e zeros próximos, mas não idênticos, ainda geram uma resposta lenta de pequena amplitude (“cauda longa”)."
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#efeito-de-um-zero-adicional",
+    "href": "Notas/Aula05RespostaTransitoria.html#efeito-de-um-zero-adicional",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Efeito de um Zero Adicional",
+    "text": "Efeito de um Zero Adicional\n\nEfeito de um zero adicional (no semiplano esquerdo) na resposta ao degrau\nUm zero em \\(s=-a\\) (SPE) aumenta o sobressinal e reduz o tempo de subida\nQuanto mais próximo do eixo \\(j\\omega\\) (menor \\(a\\) em relação a \\(\\zeta\\omega_n\\)), maior o efeito"
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#zeros-de-fase-não-mínima",
+    "href": "Notas/Aula05RespostaTransitoria.html#zeros-de-fase-não-mínima",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Zeros de Fase Não-Mínima",
+    "text": "Zeros de Fase Não-Mínima\nSe o zero estiver no semiplano direito (\\(s=+a\\), \\(a&gt;0\\)), o sistema é dito de fase não-mínima:\n\\[G(s) = \\frac{\\omega_n^2(1 - s/a)}{s^2+2\\zeta\\omega_n s+\\omega_n^2}\\]\n\nA resposta ao degrau apresenta um “undershoot” inicial: a saída parte na direção oposta à referência antes de convergir\nFenômeno comum em: aeronaves (manobra de arfagem), sistemas com atraso de transporte aproximado, alguns processos químicos\n\n\n\n\n\n\n\nImportant\n\n\nZeros de fase não-mínima limitam fundamentalmente o desempenho alcançável por realimentação — nenhum controlador elimina o undershoot inicial sem violar restrições físicas."
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#efeito-de-um-polo-real-adicional",
+    "href": "Notas/Aula05RespostaTransitoria.html#efeito-de-um-polo-real-adicional",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Efeito de um Polo Real Adicional",
+    "text": "Efeito de um Polo Real Adicional\n\nEfeito de um polo real adicional na resposta ao degrau\nUm polo real adicional sempre reduz o sobressinal e aumenta o tempo de subida (resposta mais lenta)\nSe o polo extra estiver longe à esquerda (muito mais rápido que os dominantes), seu efeito é desprezível — validação prática do critério de dominância"
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#resumo-dos-efeitos",
+    "href": "Notas/Aula05RespostaTransitoria.html#resumo-dos-efeitos",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Resumo dos Efeitos",
+    "text": "Resumo dos Efeitos\n\n\n\n\n\n\n\n\n\nElemento adicional\nEfeito sobre \\(M_p\\)\nEfeito sobre \\(t_r\\)\nEfeito sobre \\(t_s\\)\n\n\n\n\nPolo real (SPE), próximo\n↓ reduz\n↑ aumenta\npode aumentar\n\n\nPolo real (SPE), distante\n≈ nulo\n≈ nulo\n≈ nulo\n\n\nZero real (SPE), próximo\n↑ aumenta\n↓ reduz\npouco efeito\n\n\nZero real (SPD, fase não-mínima)\nundershoot inicial\n—\npode aumentar\n\n\n\n\n\n\n\n\n\nTip\n\n\nRegra de bolso: polos atrasam, zeros adiantam a resposta — e ambos têm mais efeito quanto mais próximos estiverem do eixo imaginário em relação aos polos dominantes."
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#exercícios",
+    "href": "Notas/Aula05RespostaTransitoria.html#exercícios",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nUm sistema tem polos em \\(s=-1\\pm j2\\) e \\(s=-8\\). Verifique se o critério de dominância (fator 5) é satisfeito e estime \\(M_p\\) e \\(t_s\\) usando a aproximação de 2ª ordem.\nRepita o exercício anterior para polos dominantes em \\(s=-1\\pm j2\\) e um terceiro polo em \\(s=-3\\). A aproximação ainda é válida? Justifique.\nExplique, em termos de resíduos da expansão em frações parciais, por que um zero muito próximo de um polo reduz a contribuição do modo associado a esse polo.\nDescreva um exemplo físico (além de aeronaves) em que um zero de fase não-mínima é relevante, e explique a consequência prática do undershoot.\nUm sistema de 2ª ordem com \\(\\zeta=0{,}5\\), \\(\\omega_n=2\\) rad/s ganha um zero adicional em \\(s=-1\\). Qualitativamente, como isso altera \\(M_p\\) e \\(t_r\\) em relação ao sistema original?"
+  },
+  {
+    "objectID": "Notas/Aula05RespostaTransitoria.html#referências",
+    "href": "Notas/Aula05RespostaTransitoria.html#referências",
+    "title": "Resposta Transitória de Sistemas de Ordem Superior",
+    "section": "Referências",
+    "text": "Referências"
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#motivação",
+    "href": "Notas/Aula07LGR.html#motivação",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Motivação",
+    "text": "Motivação\nConsidere a malha fechada com ganho ajustável \\(K\\):\n\\[T(s) = \\frac{KG(s)}{1+KG(s)H(s)}\\]\nOs polos de malha fechada mudam de posição conforme \\(K\\) varia de \\(0\\) a \\(\\infty\\) — e a resposta transitória (Aulas 3–5) e a estabilidade (Aula 6) dependem diretamente dessas posições.\n\n\n\n\n\n\nDefinição\n\n\nO Lugar Geométrico das Raízes (LGR), ou lugar de Evans, é o conjunto de todas as posições dos polos de malha fechada quando \\(K\\) varia de \\(0\\) a \\(+\\infty\\).\n\n\n\nO LGR permite visualizar como escolher \\(K\\) para atender especificações de \\(\\zeta\\), \\(\\omega_n\\), \\(M_p\\), \\(t_s\\) — sem calcular as raízes para cada valor de \\(K\\)."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#condições-de-ângulo-e-de-módulo",
+    "href": "Notas/Aula07LGR.html#condições-de-ângulo-e-de-módulo",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Condições de Ângulo e de Módulo",
+    "text": "Condições de Ângulo e de Módulo\nUm ponto \\(s_0\\) pertence ao LGR se e somente se satisfaz a equação característica \\(1+KG(s)H(s)=0\\), ou seja, \\(KG(s_0)H(s_0) = -1\\). Escrevendo em forma polar:\n\n\n\n\n\n\nCondição de ângulo (define o LGR)\n\n\n\\[\\angle G(s_0)H(s_0) = 180° + k\\cdot360°, \\qquad k=0,\\pm1,\\pm2,\\ldots\\]\n\n\n\n\n\n\n\n\n\nCondição de módulo (define o valor de \\(K\\) naquele ponto)\n\n\n\\[K = \\frac{1}{|G(s_0)H(s_0)|}\\]\n\n\n\n\nA condição de ângulo sozinha determina se \\(s_0\\) está no LGR (independente de \\(K\\))\nA condição de módulo só é usada depois, para achar o \\(K\\) correspondente a um ponto já identificado no LGR"
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#regras-de-construção-ramos-e-simetria",
+    "href": "Notas/Aula07LGR.html#regras-de-construção-ramos-e-simetria",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Regras de Construção — Ramos e Simetria",
+    "text": "Regras de Construção — Ramos e Simetria\nSeja \\(G(s)H(s) = \\dfrac{\\prod_{i=1}^{m}(s+z_i)}{\\prod_{j=1}^{n}(s+p_j)}\\), com \\(n\\) polos e \\(m\\) zeros de malha aberta (\\(n\\geq m\\), tipicamente).\n\nNúmero de ramos = \\(n\\) (número de polos de malha aberta) — cada ramo parte de um polo\nPontos de partida (\\(K=0\\)): os \\(n\\) polos de malha aberta\nPontos de chegada (\\(K\\to\\infty\\)): os \\(m\\) zeros finitos de malha aberta; os \\(n-m\\) ramos restantes vão para zeros no infinito\nSimetria: o LGR é simétrico em relação ao eixo real (polos complexos sempre em pares conjugados)"
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#regras-de-construção-eixo-real",
+    "href": "Notas/Aula07LGR.html#regras-de-construção-eixo-real",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Regras de Construção — Eixo Real",
+    "text": "Regras de Construção — Eixo Real\n\n\n\n\n\n\nRegra do eixo real\n\n\nUm ponto do eixo real pertence ao LGR se o número de polos mais zeros de malha aberta à sua direita é ímpar.\n\n\n\n\nRegra derivada diretamente da condição de ângulo: cada polo/zero real à direita contribui \\(180°\\); a soma precisa ser um múltiplo ímpar de \\(180°\\)\nSegmentos entre polos/zeros reais alternam pertencer ou não ao LGR, da direita para a esquerda"
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#regras-de-construção-assíntotas",
+    "href": "Notas/Aula07LGR.html#regras-de-construção-assíntotas",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Regras de Construção — Assíntotas",
+    "text": "Regras de Construção — Assíntotas\nOs \\(n-m\\) ramos que vão para o infinito o fazem ao longo de assíntotas retas, centradas em:\n\\[\\sigma_a = \\frac{\\sum_j p_j - \\sum_i z_i}{n-m} \\qquad\\text{(centroide, sobre o eixo real)}\\]\ncom ângulos:\n\\[\\theta_a = \\frac{(2k+1)\\times180°}{n-m}, \\qquad k = 0,1,\\ldots,n-m-1\\]\n\n\n\n\n\n\nTip\n\n\nExemplo: com \\(n-m=3\\) (três ramos ao infinito), os ângulos são \\(60°\\), \\(180°\\) e \\(300°\\) (\\(-60°\\))."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#regras-de-construção-pontos-de-saídachegada",
+    "href": "Notas/Aula07LGR.html#regras-de-construção-pontos-de-saídachegada",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Regras de Construção — Pontos de Saída/Chegada",
+    "text": "Regras de Construção — Pontos de Saída/Chegada\nPontos de quebra (breakaway/break-in): onde dois ou mais ramos reais se encontram e se separam (saindo ou entrando no eixo real). Ocorrem em raízes reais de:\n\\[\\frac{dK}{ds} = 0, \\qquad \\text{onde } K(s) = \\frac{-1}{G(s)H(s)}\\]\nrestritas às regiões do eixo real que pertencem ao LGR (regra anterior).\nÂngulos de partida/chegada (polos/zeros complexos): calculados aplicando a condição de ângulo a um ponto de teste infinitesimalmente próximo ao polo (ou zero) complexo, somando as contribuições angulares de todos os demais polos e zeros."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#regras-de-construção-cruzamento-do-eixo-imaginário",
+    "href": "Notas/Aula07LGR.html#regras-de-construção-cruzamento-do-eixo-imaginário",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Regras de Construção — Cruzamento do Eixo Imaginário",
+    "text": "Regras de Construção — Cruzamento do Eixo Imaginário\nO(s) ponto(s) onde o LGR cruza o eixo \\(j\\omega\\) (fronteira de estabilidade) e o ganho crítico \\(K_{crít}\\) correspondente são obtidos por Routh-Hurwitz (Aula 6): o valor de \\(K\\) que anula uma linha inteira do array de Routh é \\(K_{crít}\\); o polinômio auxiliar formado com a linha anterior dá a frequência de cruzamento \\(\\omega\\).\n\n\n\n\n\n\nImportant\n\n\nEssa é a ponte direta entre o critério de Routh-Hurwitz (Aula 6) e o LGR: o array de Routh localiza exatamente onde o lugar cruza para o semiplano direito."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#exemplo-1-lgr-de-gshs-dfrackss2s4",
+    "href": "Notas/Aula07LGR.html#exemplo-1-lgr-de-gshs-dfrackss2s4",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Exemplo 1 — LGR de \\(G(s)H(s) = \\dfrac{K}{s(s+2)(s+4)}\\)",
+    "text": "Exemplo 1 — LGR de \\(G(s)H(s) = \\dfrac{K}{s(s+2)(s+4)}\\)\n\nLGR de \\(K/[s(s+2)(s+4)]\\)\n\\(n=3\\) polos (\\(0,-2,-4\\)), \\(m=0\\) zeros \\(\\implies\\) 3 ramos, todos para o infinito\nCentroide: \\(\\sigma_a = \\dfrac{0-2-4}{3} = -2\\); ângulos das assíntotas: \\(60°, 180°, 300°\\)\nEixo real no LGR: \\([-2,0]\\) e \\((-\\infty,-4]\\)"
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#exemplo-1-ganho-crítico",
+    "href": "Notas/Aula07LGR.html#exemplo-1-ganho-crítico",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Exemplo 1 — Ganho Crítico",
+    "text": "Exemplo 1 — Ganho Crítico\nEquação característica: \\(s(s+2)(s+4)+K = s^3+6s^2+8s+K=0\\).\nArray de Routh (mesma estrutura da Aula 6):\n\\[\n\\begin{array}{c|cc}\ns^3 & 1 & 8 \\\\\ns^2 & 6 & K \\\\\ns^1 & 8-\\dfrac{K}{6} & 0 \\\\\ns^0 & K &\n\\end{array}\n\\]\nEstabilidade: \\(0 &lt; K &lt; 48\\). Em \\(K=48\\), a linha \\(s^1\\) se anula — o LGR cruza o eixo \\(j\\omega\\) em \\(\\omega = \\sqrt{8} \\approx 2{,}83\\) rad/s (raiz do polinômio auxiliar \\(6s^2+K=0\\))."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#exemplo-2-efeito-de-um-zero-gshs-dfracks3ss1s5",
+    "href": "Notas/Aula07LGR.html#exemplo-2-efeito-de-um-zero-gshs-dfracks3ss1s5",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Exemplo 2 — Efeito de um Zero: \\(G(s)H(s) = \\dfrac{K(s+3)}{s(s+1)(s+5)}\\)",
+    "text": "Exemplo 2 — Efeito de um Zero: \\(G(s)H(s) = \\dfrac{K(s+3)}{s(s+1)(s+5)}\\)\n\nLGR de \\(K(s+3)/[s(s+1)(s+5)]\\)\n\\(n=3\\) polos (\\(0,-1,-5\\)), \\(m=1\\) zero (\\(-3\\)) \\(\\implies\\) 3 ramos: 1 termina no zero \\(-3\\), 2 vão ao infinito\n\\(n-m=2\\) assíntotas: ângulos \\(90°\\) e \\(270°\\), centroide \\(\\sigma_a = \\dfrac{(0-1-5)-(-3)}{2}=-1{,}5\\)\nO zero atrai o ramo complexo para a esquerda, tendendo a estabilizar e acelerar o sistema (compare com o Exemplo 1, sem zero)"
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#usando-o-lgr-para-projeto",
+    "href": "Notas/Aula07LGR.html#usando-o-lgr-para-projeto",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Usando o LGR para Projeto",
+    "text": "Usando o LGR para Projeto\nO LGR permite escolher \\(K\\) (ou projetar um controlador que reformula o LGR) para posicionar os polos de malha fechada em uma região desejada do plano \\(s\\):\n\nTrace as retas de \\(\\zeta\\) constante (ângulo \\(\\theta=\\cos^{-1}\\zeta\\) a partir da origem) para atender a especificação de \\(M_p\\) (Aula 4)\nTrace a reta vertical \\(\\text{Re}(s) = -\\sigma_{\\min}\\) para atender a especificação de \\(t_s\\)\nIdentifique a interseção dessas retas com o LGR e leia (ou calcule pela condição de módulo) o \\(K\\) correspondente\n\n\n\n\n\n\n\nTip\n\n\nSe o LGR não passa pela região desejada, é necessário modificar a malha aberta — adicionando polos/zeros via um controlador (compensador de avanço/atraso de fase, ou PID — Aula 9) para “puxar” o lugar para a região desejada."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#exemplo-de-projeto-por-lgr",
+    "href": "Notas/Aula07LGR.html#exemplo-de-projeto-por-lgr",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Exemplo de Projeto por LGR",
+    "text": "Exemplo de Projeto por LGR\nProblema: para \\(G(s)H(s) = \\dfrac{K}{s(s+2)(s+4)}\\) (Exemplo 1), encontrar \\(K\\) tal que o par de polos dominantes tenha \\(\\zeta \\approx 0{,}5\\).\nProcedimento:\n\nTrace a reta \\(\\theta = \\cos^{-1}(0{,}5) = 60°\\) a partir da origem\nEncontre a interseção dessa reta com o ramo complexo do LGR (numericamente ou por software)\nAplique a condição de módulo naquele ponto \\(s_0\\): \\(K = |s_0|\\,|s_0+2|\\,|s_0+4|\\)\n\n\n\n\n\n\n\nNote\n\n\nNa prática, esse procedimento é feito por software (MATLAB rlocus/sgrid, Python control.root_locus) — o traçado manual detalhado tem valor didático, para compreender a geometria por trás do resultado numérico."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#exercícios",
+    "href": "Notas/Aula07LGR.html#exercícios",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nPara \\(G(s)H(s) = \\dfrac{K}{(s+1)(s+3)}\\), esboce o LGR: identifique polos, segmentos do eixo real, centroide e ângulos das assíntotas.\nPara \\(G(s)H(s) = \\dfrac{K}{s(s+1)(s+2)(s+3)}\\), determine o número de ramos, a posição do centroide e os ângulos das assíntotas.\nRepita o Exemplo 1 (LGR de \\(K/[s(s+2)(s+4)]\\)) calculando manualmente o ponto de quebra no eixo real, no intervalo \\([-2,0]\\).\nPara \\(G(s)H(s)=\\dfrac{K(s+3)}{s(s+1)(s+5)}\\) (Exemplo 2), monte o array de Routh da equação característica e determine a faixa de \\(K\\) para estabilidade.\nExplique por que adicionar um zero ao ramo complexo do LGR tende a “puxar” os polos dominantes para a esquerda, tornando o sistema mais estável e mais rápido."
+  },
+  {
+    "objectID": "Notas/Aula07LGR.html#referências",
+    "href": "Notas/Aula07LGR.html#referências",
+    "title": "Lugar Geométrico das Raízes (LGR)",
+    "section": "Referências",
+    "text": "Referências"
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#o-controlador-pid",
+    "href": "Notas/Aula09PID.html#o-controlador-pid",
+    "title": "Controlador PID",
+    "section": "O Controlador PID",
+    "text": "O Controlador PID\nO controlador Proporcional-Integral-Derivativo (PID) é, de longe, o mais usado na indústria — estima-se que mais de 90% das malhas de controle industriais usem alguma variante de PID.\n\\[u(t) = K_p\\,e(t) + K_i\\int_0^t e(\\tau)\\,d\\tau + K_d\\,\\frac{de(t)}{dt}\\]\n\\[C(s) = \\frac{U(s)}{E(s)} = K_p + \\frac{K_i}{s} + K_d s = K_d\\,\\frac{s^2 + \\frac{K_p}{K_d}s + \\frac{K_i}{K_d}}{s}\\]\n\n\n\n\n\n\nTip\n\n\nO PID adiciona dois zeros e um polo na origem à malha aberta — o polo na origem aumenta o tipo do sistema (elimina erro de regime permanente ao degrau, Aula 6); os zeros dão liberdade para formar o LGR (Aula 7) e ajustar as margens de fase (Aula 8)."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#estrutura-em-diagrama-de-blocos",
+    "href": "Notas/Aula09PID.html#estrutura-em-diagrama-de-blocos",
+    "title": "Controlador PID",
+    "section": "Estrutura em Diagrama de Blocos",
+    "text": "Estrutura em Diagrama de Blocos"
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#ação-proporcional-p",
+    "href": "Notas/Aula09PID.html#ação-proporcional-p",
+    "title": "Controlador PID",
+    "section": "Ação Proporcional (P)",
+    "text": "Ação Proporcional (P)\n\\[C(s) = K_p \\qquad\\qquad u(t) = K_p\\,e(t)\\]\n\nAção instantânea, proporcional ao erro atual\nAumentar \\(K_p\\): reduz o erro de regime permanente (Aula 6, \\(K_p^{\\text{erro}}\\propto K_p\\)), acelera a resposta, mas aumenta o sobressinal e pode levar à instabilidade\nNão elimina erro de regime permanente em sistemas tipo 0 (apenas reduz)\n\n\n\n\n\n\n\nWarning\n\n\nGanho proporcional muito alto pode levar o sistema à instabilidade — veja o LGR (Aula 7): aumentar \\(K_p\\) move os polos ao longo do lugar geométrico, podendo cruzar para o semiplano direito."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#ação-integral-i",
+    "href": "Notas/Aula09PID.html#ação-integral-i",
+    "title": "Controlador PID",
+    "section": "Ação Integral (I)",
+    "text": "Ação Integral (I)\n\\[C(s) = \\frac{K_i}{s} \\qquad\\qquad u(t) = K_i\\int_0^t e(\\tau)\\,d\\tau\\]\n\nAcumula o erro ao longo do tempo — mesmo um erro pequeno e persistente gera ação de controle crescente\nAdiciona um polo na origem: aumenta o tipo do sistema em 1 \\(\\implies\\) elimina o erro de regime permanente ao degrau (sistemas tipo 0 → tipo 1)\nCusto: adiciona \\(-90°\\) de fase, reduzindo a margem de fase (Aula 8) e tornando a resposta mais lenta/oscilatória se \\(K_i\\) for muito grande\n\n\n\n\n\n\n\nWindup integral\n\n\nSe o atuador saturar (limite físico de \\(u(t)\\)), o termo integral pode continuar acumulando erro indefinidamente, causando grande sobressinal ao sair da saturação. Controladores reais implementam anti-windup (ex.: parar a integração quando saturado)."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#ação-derivativa-d",
+    "href": "Notas/Aula09PID.html#ação-derivativa-d",
+    "title": "Controlador PID",
+    "section": "Ação Derivativa (D)",
+    "text": "Ação Derivativa (D)\n\\[C(s) = K_d\\,s \\qquad\\qquad u(t) = K_d\\,\\frac{de(t)}{dt}\\]\n\nReage à taxa de variação do erro — antecipa a tendência, “freando” a resposta antes de atingir o valor final\nAdiciona um zero: tende a reduzir o sobressinal e melhorar a margem de fase (fase adicional de \\(+90°\\)), permitindo aumentar \\(K_p\\) com mais segurança\nNunca usado sozinho (ação D pura não atua sobre erro constante) — sempre combinado com P ou PI\n\n\n\n\n\n\n\nChute derivativo e ruído\n\n\nA derivada amplifica ruído de alta frequência — na prática, usa-se um filtro passa-baixas na ação derivativa, e a derivada é aplicada sobre a saída medida \\(y(t)\\) (não sobre o erro) para evitar o “derivative kick” causado por mudanças bruscas na referência."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#efeito-individual-dos-ganhos",
+    "href": "Notas/Aula09PID.html#efeito-individual-dos-ganhos",
+    "title": "Controlador PID",
+    "section": "Efeito Individual dos Ganhos",
+    "text": "Efeito Individual dos Ganhos\n\nEfeito da variação isolada de \\(K_p\\), \\(K_i\\) e \\(K_d\\) na resposta ao degrau"
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#tabela-resumo-efeito-qualitativo-dos-ganhos",
+    "href": "Notas/Aula09PID.html#tabela-resumo-efeito-qualitativo-dos-ganhos",
+    "title": "Controlador PID",
+    "section": "Tabela-Resumo: Efeito Qualitativo dos Ganhos",
+    "text": "Tabela-Resumo: Efeito Qualitativo dos Ganhos\n\n\n\n\n\n\n\n\n\n\nAumentar\nTempo de subida\nSobressinal\nTempo de acomodação\nErro regime perm. (degrau)\n\n\n\n\n\\(K_p\\)\n↓ diminui\n↑ aumenta\npouco efeito\n↓ diminui (não elimina)\n\n\n\\(K_i\\)\n↓ diminui\n↑ aumenta\n↑ aumenta\nelimina\n\n\n\\(K_d\\)\npouco efeito\n↓ diminui\n↓ diminui\npouco efeito\n\n\n\n\n\n\n\n\n\nWarning\n\n\nEsta tabela (clássica em Ogata/Nise) descreve tendências isoladas — os três ganhos interagem, e o ajuste fino deve sempre ser validado por simulação ou teste no processo real."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#comparação-p-pi-pid-em-malha-fechada",
+    "href": "Notas/Aula09PID.html#comparação-p-pi-pid-em-malha-fechada",
+    "title": "Controlador PID",
+    "section": "Comparação P, PI, PID em Malha Fechada",
+    "text": "Comparação P, PI, PID em Malha Fechada\n\nResposta ao degrau: P, PI e PID controlando a mesma plantaPlanta \\(G(s)=\\dfrac{1}{s(s+1)(s+2)}\\) (tipo 1): note que P e PID eliminam o erro (a planta já é tipo 1); a ação integral do PI eleva o tipo para 2, e a ação derivativa do PID amortece o sobressinal introduzido pelo integrador."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#sintonia-de-ziegler-nichols-método-da-malha-fechada",
+    "href": "Notas/Aula09PID.html#sintonia-de-ziegler-nichols-método-da-malha-fechada",
+    "title": "Controlador PID",
+    "section": "Sintonia de Ziegler-Nichols — Método da Malha Fechada",
+    "text": "Sintonia de Ziegler-Nichols — Método da Malha Fechada\nMétodo experimental clássico (Ziegler and Nichols 1942), aplicável quando não se dispõe de um modelo preciso da planta:\n\nCom controlador apenas proporcional (\\(K_i=K_d=0\\)), aumente \\(K_p\\) até que a saída apresente oscilação sustentada (amplitude constante) — esse é o ganho crítico \\(K_{cr}\\) (relaciona-se ao \\(K_{crít}\\) do cruzamento do LGR com o eixo \\(j\\omega\\), Aula 7)\nMeça o período crítico \\(T_{cr}\\) da oscilação sustentada\n\n\n\n\nControlador\n\\(K_p\\)\n\\(T_i\\)\n\\(T_d\\)\n\n\n\n\nP\n\\(0{,}5\\,K_{cr}\\)\n—\n—\n\n\nPI\n\\(0{,}45\\,K_{cr}\\)\n\\(T_{cr}/1{,}2\\)\n—\n\n\nPID\n\\(0{,}6\\,K_{cr}\\)\n\\(T_{cr}/2\\)\n\\(T_{cr}/8\\)\n\n\n\ncom \\(K_i = K_p/T_i\\) e \\(K_d = K_p T_d\\)."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#sintonia-de-ziegler-nichols-método-da-curva-de-reação",
+    "href": "Notas/Aula09PID.html#sintonia-de-ziegler-nichols-método-da-curva-de-reação",
+    "title": "Controlador PID",
+    "section": "Sintonia de Ziegler-Nichols — Método da Curva de Reação",
+    "text": "Sintonia de Ziegler-Nichols — Método da Curva de Reação\nAlternativa sem levar o sistema à instabilidade — aplica-se um degrau em malha aberta e mede-se a curva de reação da planta (assumida aproximável por um modelo de 1ª ordem com atraso, FOPDT):\n\\[G(s) \\approx \\frac{K}{\\tau s + 1}\\,e^{-Ls}\\]\nobtendo-se o ganho \\(K\\), a constante de tempo \\(\\tau\\) e o atraso \\(L\\) diretamente da curva:\n\n\n\nControlador\n\\(K_p\\)\n\\(T_i\\)\n\\(T_d\\)\n\n\n\n\nP\n\\(\\tau/L\\)\n—\n—\n\n\nPI\n\\(0{,}9\\,\\tau/L\\)\n\\(L/0{,}3\\)\n—\n\n\nPID\n\\(1{,}2\\,\\tau/L\\)\n\\(2L\\)\n\\(0{,}5L\\)\n\n\n\n\n\n\n\n\n\nTip\n\n\nAs regras de Ziegler-Nichols fornecem um ponto de partida razoável, não um projeto ótimo — costuma-se refinar manualmente após a sintonia inicial (reduzir \\(K_p\\) se houver sobressinal excessivo, etc.)."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#estruturas-derivadas-pi-e-pd",
+    "href": "Notas/Aula09PID.html#estruturas-derivadas-pi-e-pd",
+    "title": "Controlador PID",
+    "section": "Estruturas Derivadas: PI e PD",
+    "text": "Estruturas Derivadas: PI e PD\n\n\nPI — quando a resposta rápida da ação D não é necessária, ou o ruído de medição é elevado:\n\\[C(s) = K_p\\left(1+\\frac{1}{T_i s}\\right)\\]\n\nElimina erro de regime permanente\nAdequado para plantas já razoavelmente amortecidas\n\n\nPD — quando não há erro de regime permanente a eliminar (ou ele é tolerável), priorizando resposta rápida com baixo sobressinal:\n\\[C(s) = K_p(1+T_d s)\\]\n\nMelhora a margem de fase e a resposta transitória\nNão afeta o tipo do sistema"
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#boas-práticas-de-implementação",
+    "href": "Notas/Aula09PID.html#boas-práticas-de-implementação",
+    "title": "Controlador PID",
+    "section": "Boas Práticas de Implementação",
+    "text": "Boas Práticas de Implementação\n\nAnti-windup: limitar ou “congelar” a integração quando o atuador satura\nDerivada filtrada: aplicar a ação D sobre \\(y(t)\\) filtrado (passa-baixas) para atenuar ruído\nDerivada sobre a saída, não sobre o erro: evita o “derivative kick” em mudanças bruscas de referência\nDiscretização: implementações reais são digitais — a integral vira um somatório e a derivada uma diferença finita (tema de Sistemas de Controle II)"
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#exercícios",
+    "href": "Notas/Aula09PID.html#exercícios",
+    "title": "Controlador PID",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nPara uma planta \\(G(s)=\\dfrac{1}{(s+1)(s+3)}\\) controlada com PI, mostre que o tipo do sistema em malha aberta passa de 0 para 1 e que, portanto, o erro ao degrau é eliminado em malha fechada.\nUm teste de malha fechada com controlador P puro apresentou oscilação sustentada para \\(K_p=K_{cr}=10\\), com período \\(T_{cr}=2\\) s. Calcule os parâmetros de um controlador PID pelo método de Ziegler-Nichols (malha fechada).\nExplique por que a ação derivativa pura (\\(C(s)=K_ds\\)) nunca é usada isoladamente em um controlador.\nDescreva o fenômeno de windup integral e proponha (em palavras) uma estratégia de anti-windup para um atuador com saturação em \\(\\pm10\\) V.\nCompare, para a planta \\(G(s)=1/[s(s+1)(s+2)]\\) (Aula 9, exemplo de comparação), o motivo pelo qual o controlador PI apresenta mais oscilação do que o P puro, relacionando com a fase adicional introduzida pelo integrador (Aula 8)."
+  },
+  {
+    "objectID": "Notas/Aula09PID.html#referências",
+    "href": "Notas/Aula09PID.html#referências",
+    "title": "Controlador PID",
+    "section": "Referências",
+    "text": "Referências\n\n\nZiegler, John G., and Nathaniel B. Nichols. 1942. “Optimum Settings for Automatic Controllers.” Transactions of the ASME 64: 759–68."
   }
 ]

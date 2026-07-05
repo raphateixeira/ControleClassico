@@ -1,19 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://raphateixeira.github.io/ControleClassico/Notas/SC01Introducao.html</loc>
-    <lastmod>2026-05-29T14:02:14.250Z</lastmod>
+    <loc>https://raphateixeira.github.io/ControleClassico/Avaliacoes/Avaliacao01Exemplo.html</loc>
+    <lastmod>2026-07-05T17:53:04.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula08RespostaFrequencia.html</loc>
+    <lastmod>2026-07-05T18:15:06.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula06ErroRegimePermanente.html</loc>
+    <lastmod>2026-07-05T18:13:32.682Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula04SegundaOrdem.html</loc>
+    <lastmod>2026-07-05T18:11:27.120Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula02ModelagemFT.html</loc>
+    <lastmod>2026-07-05T18:17:42.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula00PlanoEnsino.html</loc>
+    <lastmod>2026-07-05T18:08:11.982Z</lastmod>
   </url>
   <url>
     <loc>https://raphateixeira.github.io/ControleClassico/index.html</loc>
-    <lastmod>2026-05-29T14:04:57.792Z</lastmod>
+    <lastmod>2026-07-05T17:52:26.865Z</lastmod>
   </url>
   <url>
-    <loc>https://raphateixeira.github.io/ControleClassico/exemplo.html</loc>
-    <lastmod>2026-05-29T14:04:09.745Z</lastmod>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula01Introducao.html</loc>
+    <lastmod>2026-07-05T18:08:58.252Z</lastmod>
   </url>
   <url>
-    <loc>https://raphateixeira.github.io/ControleClassico/Notas/SC00PlanoEnsino.html</loc>
-    <lastmod>2026-05-29T14:10:37.631Z</lastmod>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula03PrimeiraOrdem.html</loc>
+    <lastmod>2026-07-05T18:10:46.511Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula05RespostaTransitoria.html</loc>
+    <lastmod>2026-07-05T18:12:01.963Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula07LGR.html</loc>
+    <lastmod>2026-07-05T18:14:21.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://raphateixeira.github.io/ControleClassico/Notas/Aula09PID.html</loc>
+    <lastmod>2026-07-05T18:15:52.777Z</lastmod>
   </url>
 </urlset>
